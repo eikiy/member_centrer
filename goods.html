@@ -12,6 +12,7 @@
 <!-- <script src="https://use.fontawesome.com/ca17a34927.js"></script> -->
 <link rel="stylesheet" href="on-server/css/fontawesome-all.css">
 <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
@@ -33,19 +34,6 @@ $(document).ready(function() {
 
 </head>
 <body>
-<!-- <header class="TopHeaderBox">
-    <nav class="Menu ContentsBox clearfix">
-        <h1 class="logo"><a href="index.html">holkee</a></h1>
-        <ul class="clearfix">
-            <li><p><a class="go01">特色介紹</a></p></li>
-            <li><p><a class="go02">免費模板</a></p></li>
-            <li><p class="green"><a href="#">會員登入</a> / <a href="#">註冊</a></p></li>
-        </ul>
-    </nav>
-</header>
-
-<div style="min-height: 1500px; display: block; width: 100%; background-color: #efefef;"></div>
- -->
  <header class="HeaderBox">
     <nav class="Menu ContentsBox clearfix">
         <h1 class="logo"><a href="index.html">holkee</a></h1>
@@ -55,7 +43,7 @@ $(document).ready(function() {
             <li><p><a href="#">最新消息</a></p></li>
         </ul>
         <ul class="userBox">
-            <li class="noticeBox"><a><p><i class="fa fa-bell-o" aria-hidden="true"></i>
+            <li class="noticeBox"><a><p><i class="far fa-bell"></i>
                 <span class="text">通知</span>
                 <span class="bell_nb">9</span></p></a>
                 <div class="notificationBox"=>
@@ -135,21 +123,21 @@ $(document).ready(function() {
         <div class="sideMenu">
             <ul class="mainMenu">
                 <li><h3><a href="#"><i class="fa fa-user" aria-hidden="true"></i>會員專區</a></h3></li>
-                <li><h3 class="btn_in"><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>我的創作區</a></h3></li>
+                <li><h3><a href="#"><i class="far fa-folder-open" aria-hidden="true"></i>我的創作區</a></h3></li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>查看報表</a></h3>
+                    <h3><a href="#"><i class="fas fa-chart-bar" aria-hidden="true"></i>
+                        <i class="the_arr fas fa-angle-down"></i>查看報表</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">網站瀏覽量</a></p></li>
                         <li><p><a href="#">表單<span class="label_nb">10</span></a></p></li>
                     </ul>
                 </li>
-                <li><h3><a href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i>holkee點數</a></h3></li>
-                <li><h3><a href="#"><i class="fa fa-sliders" aria-hidden="true"></i>行銷廣告<span class="label_remind">廣告即將到期</span></a></h3></li>
-                <li><h3><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i>申請GMB<span class="label_remind">免費</span></a></h3></li>
+                <li><h3><a href="#"><i class="fab fa-product-hunt" aria-hidden="true"></i>holkee點數</a></h3></li>
+                <li><h3><a href="#"><i class="fas fa-sliders-h"></i>行銷廣告<span class="label_remind">廣告即將到期</span></a></h3></li>
+                <li><h3><a href="#"><i class="far fa-star" aria-hidden="true"></i>申請GMB<span class="label_remind">免費</span></a></h3></li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>我的訂單</a></h3>
+                    <h3><a href="#"><i class="far fa-file-alt"></i>
+                        <i class="the_arr fas fa-angle-down"></i>我的訂單</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">訂單總覽<span class="label_nb">999+</span><!-- <span class="label_remind">999</span> --></a></p></li>
                         <li><p><a href="#">訂單出貨</a></p></li>
@@ -157,11 +145,11 @@ $(document).ready(function() {
                     </ul>
                 </li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>我的商店</a></h3>
+                    <h3 class="btn_in"><a href="#"><i class="fas fa-home"></i>
+                        <i class="the_arr fas fa-angle-down" aria-hidden="true"></i>我的商店</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">商店資料設定<span class="label_remind">尚未設定</span></a></p></li>
-                        <li><p><a href="#">商品列表<span class="label_remind">尚未設定</span></a></p></li>
+                        <li><p class="btn_in"><a href="#">商品列表<span class="label_remind">尚未設定</span></a></p></li>
                         <li><p><a href="Pay.html">金流帳號設定<span class="label_remind">尚未設定</span></a></p></li>
                         <li><p><a href="logistics_set.html">物流運費設定<span class="label_remind">尚未設定</span></a></p></li>
                     </ul>
@@ -170,111 +158,15 @@ $(document).ready(function() {
         </div>
         <div class="rightData">
             <div class="dataBox">
-                <h4 class="top_title">購物網站</h4>
+                <h4 class="top_title">商品列表</h4>
                 <ul class="My_template">
                     <li class="shoppingBox">
                         <div>
-                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                            <h5>我的購物網站，尚未開啟。</h5>
-                            <p class="btn_tools btn_default"><a href="#popup2" class="popup-link">開啟購物網站</a></p>
+                            <i class="fas fa-archive"></i>
+                            <h5>您尚未新增任何商品</h5>
+                            <p class="btn_tools btn_default"><a href="#popup2" class="popup-link">新增商品</a></p>
                         </div>
                     </li>
-                    <li class="clearfix"><!-- 開啟後的購物網站，一個帳號只能建立一個購物網站 -->
-                        <div class="btn_swtich clearfix">
-                            <p class="open">公開</p>
-                            <div class="swtich_type"><input type="checkbox" id="swtich"><label class="button" for="swtich"></label></div>
-                        </div>
-                        <div class="label_shopping"><p><i class="fa fa-shopping-basket" aria-hidden="true"></i>SHOP</p></div>
-                        <div class="share_photo"><img src="images/share_00_s.png" width="100%" alt=""></div>
-                        <div class="website_info">
-                            <h5 class="web_name">Web title</h5>
-                            <p class="the_meta">description / keywords</p>
-                            <p class="web_Site"><a href="#" target="_blank">www.holkee.com/sandyyu</a></p>
-                            <p class="update">上次更新：1天前</p>
-                            <p class="btn_tools btn_default">
-                                <a href="#">編輯</a>
-                                <a class="color_orange popup-link" href="#popup">網站設定</a>
-                                <a class="color_green" href="#">金流</a>
-                                <a class="color_purple" href="#">物流</a>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-                <h4 class="top_title">活動網站/個人網站</h4>
-                <ul class="My_template">
-                    <li class="shoppingBox">
-                        <div>
-                            <i class="fa fa-home"></i>
-                            <h5>目前尚未建立網站</h5>
-                            <p class="btn_tools btn_default"><a href="#">前往免費模板</a></p>
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="btn_swtich clearfix">
-                            <p>未公開</p>
-                            <div class="swtich_type"><input type="checkbox" id="swtich2"><label class="button" for="swtich2"></label></div>
-                        </div>
-                        <div class="share_photo"><img src="images/share_01_s.png" width="100%" alt=""></div>
-                        <div class="website_info">
-                            <h5 class="web_name">holkee 掌握行動商機 ‧ 快速分享你我他</h5>
-                            <p class="the_meta">網站設定：你還沒有填寫關鍵字與描述擋喔，趕緊填寫提升網站搜尋吧！</p>
-                            <p class="web_Site"><a href="#" target="_blank">www.holkee.com/moonrolijwe2664</a></p>
-                            <p class="update">上次更新：15天前</p>
-                            <p class="btn_tools btn_default">
-                                <a href="#">編輯</a>
-                                <a class="color_orange popup-link" href="#popup">網站設定</a>
-                                <a class="icon_delete" href="#" title="刪除網站"><i class="far fa-trash-alt" title="刪除訂單"></i></a>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="btn_swtich clearfix">
-                            <p>未公開</p>
-                            <div class="swtich_type"><input type="checkbox" id="swtich3"><label class="button" for="swtich3"></label></div>
-                        </div>
-                        <div class="share_photo"><img src="images/share_02_s.png" width="100%" alt=""></div>
-                        <div class="website_info">
-                            <h5 class="web_name">My Pretty Girl</h5>
-                            <p class="the_meta">您美麗的幸福歸屬就在這裡<span>　|　新娘秘書、台北市、婚秘、結婚、新人、pretty girl</span></p> <!-- 前title後keyword，但title太長就只有出現title囉XD -->
-                            <p class="web_Site"><a href="#" target="_blank">www.holkee.com/yayachachababy</a></p>
-                            <p class="update">上次更新：15天前</p>
-                            <p class="btn_tools btn_default">
-                                <a href="#">編輯</a>
-                                <a class="color_orange" href="#">網站設定</a>
-                                <a class="icon_delete" href="#" title="刪除網站"><i class="far fa-trash-alt" title="刪除訂單"></i></a>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="btn_swtich clearfix">
-                            <p>未公開</p>
-                            <div class="swtich_type"><input type="checkbox" id="swtich4"><label class="button" for="swtich4"></label></div>
-                        </div>
-                        <div class="share_photo"><img src="images/share_03_s.png" width="100%" alt=""></div>
-                        <div class="website_info">
-                            <h5 class="web_name">中秋必吃 ‧ 粉系月餅</h5>
-                            <p class="the_meta">網站設定：你還沒有填寫關鍵字與描述擋喔，趕緊填寫提升網站搜尋吧！</p>
-                            <p class="web_Site"><a href="#" target="_blank">www.holkee.com/moon_shop168</a></p>
-                            <p class="update">上次更新：15天前</p>
-                            <p class="btn_tools btn_default">
-                                <a href="#">編輯</a>
-                                <a class="color_orange" href="#">網站設定</a>
-                                <a class="icon_delete" href="#" title="刪除網站"><i class="far fa-trash-alt" title="刪除訂單"></i></a>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="pageBox"> <!-- 最多八個或幾個網站? 就出現頁籤 -->
-                  <li><p><a href="#" class="border">Prev</a></p></li>
-                  <li><p><a href="#">1</a></p></li>
-                  <li><p><a class="btn_in" href="#">2</a></p></li>
-                  <li><p><a href="#">3</a></p></li>
-                  <li><p><a href="#">4</a></p></li>
-                  <li><p>...</p></li>
-                  <li><p><a href="#">15</a></p></li>
-                  <li><p><a href="#">16</a></p></li>
-                  <li><p><a href="#">17</a></p></li>
-                  <li><p><a href="#" class="border">Next</a></p></li>
                 </ul>
             </div>
         </div>
@@ -337,7 +229,7 @@ $(document).ready(function() {
                     <div class="shareBox clearfix">
                         <a class="the_img" href="#"><img src="images/share_img_default.jpg" width="100%" alt="holkee 分享示意圖"></a>
                         <p class="the_reminder">分享圖將會顯示您於FB、Line、Google、Twitter分享連結時出現的圖示。<br>
-                        (圖片大小要在600x600或以上。)  <a href="#">上傳圖片</a></p>
+                        (圖片大小要在200x200或以上。)  <a href="#">上傳圖片</a></p>
                     </div>
                 </li>
             </ul>
@@ -349,44 +241,83 @@ $(document).ready(function() {
 <div id="popup2" class="white-popup mfp-hide">
     <form class="setBox">
         <div class="top_title">
-            <h3>商店基本資料確認</h3>
-            <p>準備開啟您的購物網站，請先填寫以下內容</p>
+            <h3>新增商品</h3>
+            <p>準備建立商品，請填寫以下商品資訊</p>
         </div>
         <div class="fillinBox">
             <ul class="shop_info_set">
                 <li class="clearfix">
-                    <label for="website_nema"><p class="label_title">網站代號</p></label>
-                    <div class="verification clearfix">
-                        <input class="less140" id="website_title" name="website_nema" type="text">
-                        <p class="btn_default"><a href="#">檢查</a></p>
-                        <p class="for_note"><i class="fa fa-check-circle" aria-hidden="true"></i>可以使用</p>
-                        <p class="for_note color_red"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>已被使用</p>
-                    </div>
-                    <p class="the_reminder">*請輸入英數字組合限20個字元，將顯示於網址中，確認後將無法更改</p>
+                    <label for=""><p class="label_title">商品名稱</p></label>
+                    <input id="" name="" type="text">
+                    <p class="for_note color_red"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>請輸入商品描述</p> <!-- 這邊項目為必填，若未輸入則會出現紅色提醒語 -->
+                    <p class="the_reminder">※ 最多50個字元,ex.男性開領短袖襯衫</p>
                 </li>
                 <li class="clearfix">
-                    <label for="shop_neme"><p class="label_title">商店名稱</p></label>
-                   <input id="shop_neme" name="website_title" type="text">
-                    <p class="the_reminder">*請輸入中英數字組合限20個字元</p>
+                    <label for=""><p class="label_title">商品描述</p></label>
+                    <input id="" name="" type="text" value="100% 純棉、大號男性 T 恤">
+                    <p class="the_reminder">※ 最多500個字元，ex. 100%純棉</p>
                 </li>
-                <li class="clearfix"><!-- 尚未填寫手機的狀態 -->
-                    <label for=""><p class="label_title">驗證手機號碼</p></label>
-                    <div class="verification clearfix">
-                        <input class="less140" id="" name="" type="text" placeholder="請輸入手機號碼" value="">
-                        <p class="btn_default"><a href="#">傳送</a></p>
-                        <p class="for_note"><i class="fa fa-check-circle" aria-hidden="true"></i>已驗證</p>
-                        <p class="for_note color_red"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>尚未驗證</p>
+                <li>
+                    <label for=""><p class="label_title">商品類別</p></label>
+                    <div class="styled-select">
+                        <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類">
+                            <option value="0" selected="selected" class="gray">請選擇分類</option>
+                            <option value="1">西點類</option>
+                        </select>
                     </div>
-                    <p class="the_reminder">驗證碼將透過簡訊傳送到您的手機 <a href="#">立即驗證手機</a></p>
-                    <div class="verification clearfix">
-                        <input class="less140" id="" name="" type="text" placeholder="請輸入驗證碼" value="AE4621">
-                        <p class="btn_default"><a href="#">驗證</a></p>
-                        <p class="for_note color_red"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>驗證碼錯誤</p>
+                </li>
+                <li>
+                    <div class="styled-select">
+                        <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類"><!-- 選了才會出現下一層 -->
+                            <option value="0" selected="selected" class="gray">請選擇分類</option>
+                            <option value="1">蛋糕類別</option>
+                        </select>
                     </div>
-                    <p class="the_reminder">沒有收到驗證碼？ <a href="#">重新傳送</a></p>
+                </li>
+                <li>
+                    <div class="styled-select">
+                        <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇分類"><!-- 選了才會再出現下一層 -->
+                            <option value="0" selected="selected" class="gray">請選擇分類</option>
+                            <option value="1">巧克力草莓蛋糕</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <label for=""><p class="label_title">商品狀況</p></label>
+                    <div class="styled-select">
+                        <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇商品狀況">
+                            <option value="0" selected="selected" class="gray">請選擇分類</option>
+                            <option value="1">新品</option>
+                            <option value="2">整新品</option>
+                            <option value="3">二手</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <label for=""><p class="label_title">預設價格</p></label>
+                    <input id="" name="" type="text" value="490">
+                </li>
+                <li>
+                    <p class="label_title">上傳商品圖片</p>
+                    <div class="shareBox goodsPhoto clearfix">
+                        <a class="the_img" href="#"><img src="images/share_img_default.jpg" width="100%" alt="商品圖片"></a>
+                        <p class="the_reminder">※ 上傳正方形圖檔效果最佳<br>
+                            ※ 建議規格：600x600 / JPG <br>
+                            <a href="#">上傳商品圖片</a></p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <label for=""><p class="label_title">商品規格</p></label>
+                    <p class="the_reminder">請依序輸入每一層樣式 (使用逗號隔開)，系統將替您自動產生所有組合</p>
+                    <input id="" name="" type="text" placeholder="例如：紅色, 黑色, 黃色">
+                    <p class="the_reminder"><a href="#">新增規格</a></p>
+                </li>
+                <li class="clearfix">
+                    <input id="" name="" type="text" placeholder="例如：S, M, L, XL">
+                    <p class="the_reminder"><a href="#">刪除規格</a></p>
                 </li>
             </ul>
-            <p class="btn_default"><a href="#">確認</a> <a href="#" class="color_gray">取消</a></p>
+            <p class="btn_default"><a href="#">建立商品</a></p>
         </div>
     </form>
 </div>
@@ -417,9 +348,9 @@ $(document).ready(function() {
         </div>
         <div class="copyright clearfix">
             <ul class="follow_us">
-                <li><a href="#" class="line"></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-line"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-weixin"></i></a></li>
             </ul>
             <p>Copyrights © 2018 All Rights Reserved.</p>
         </div>

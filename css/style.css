@@ -107,6 +107,9 @@ html, body{ height: 100%; }
 .main_contents .rightData{float: left; width:calc(100% - 299px); min-height: calc(100vh - 364px); padding: 40px 0 60px 0; border-left: 1px solid #dfdfdf; background-color: #f9f9f9;}
 .main_contents .rightData .dataBox{ width: calc(100% - 160px); margin: 0 auto;}
 .main_contents .rightData .dataBox h4.top_title{font-size: 26px; color: #333; padding-bottom: 35px;}
+.main_contents .rightData .dataBox h5.sub_title{font-size: 20px; color: #27d0ca; padding-bottom: 15px;}
+.main_contents .rightData .dataBox h5.sub_title a.link{ font-size: 13px; color: #27d0ca; border-radius: 4px; padding: 2px 6px; display: inline-block; background-color: #ffad39; color: #fff;}
+.main_contents .rightData .dataBox h5.sub_title a.link:hover{ opacity: .9 ;}
 
 .main_contents ul.My_template{ width: 100%; max-width:760px; }
 .main_contents ul.My_template li{ padding: 25px; box-shadow: 0 0 10px rgba(0,0,0,.2); background-color: #fff; margin-bottom: 40px; position: relative; border-radius: 4px; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
@@ -137,6 +140,8 @@ html, body{ height: 100%; }
 .btn_default{ width: 100%; text-align: center; line-height: 22px; }
 .btn_default a{background-color: #27d0ca; display: inline-block; min-width: 124px; min-height: 22px; line-height: 22px; color: #fff; padding: 10px 15px; transition: all 0.2s linear;}
 .btn_default a:hover{opacity: .9;}
+.btn_default a.color_gray{  background-color: #b1b1b1; margin-left: 10px;}
+
 /*member centre 按鈕 default EDN*/
 
 .main_contents ul.My_template li p.btn_tools{ text-align: left; font-size: 14px; padding-top: 8px;}
@@ -147,7 +152,7 @@ html, body{ height: 100%; }
 .main_contents ul.My_template li p.btn_tools a.icon_delete{background:transparent; padding: 0 5px; color: #c9c9c9; font-size: 18px;}
 
 
-.main_contents ul.My_template li.shoppingBox{ background-color: #f5f5f5; text-align: center; }
+.main_contents ul.My_template li.shoppingBox{ background-color: #fff; text-align: center; }
 .main_contents ul.My_template li.shoppingBox h5{font-size: 20px;}
 .main_contents ul.My_template li.shoppingBox i{ color: #74dcd8; font-size: 44px; padding: 15px 0;}
 .main_contents ul.My_template li.shoppingBox p.btn_tools{text-align: center;}
@@ -179,6 +184,8 @@ html, body{ height: 100%; }
 .setBox .fillinBox{ width: 100%; }
 .setBox .fillinBox ul li{padding-bottom: 10px;}
 .setBox .fillinBox p.label_title{padding: 12px 0; color: #888888;}
+.setBox .fillinBox .f_red{ color: #ff2121; }
+
 .setBox .fillinBox input, .setBox .fillinBox textarea{border: 1px solid #e0e0e0; width:calc(100% - 22px); padding: 8px 10px; font-size: 15px; line-height: 24px; color: #333;}
 .setBox p.the_reminder{ color: #888888; font-size: 13px;text-align: justify; line-height: 22px; padding: 6px 0; }
 .setBox p.the_reminder a{ color: #27d0ca; }
@@ -191,8 +198,13 @@ html, body{ height: 100%; }
 .setBox .fillinBox .shareBox .the_img{ float: left; width: 150px; height: 150px; border: 1px solid #e0e0e0;}
 .setBox .fillinBox .shareBox .the_img:hover{ border-color: #9e9e9e; }
 .setBox .fillinBox .shareBox .the_img a{display: block; cursor: pointer;}
+.setBox .fillinBox .shareBox .the_img img{ width: unset; max-width: 100%; max-height: 100%;}
 
 .setBox .fillinBox .shareBox p.the_reminder{float: right; width:calc(100% - 180px); padding: 0;}
+.setBox .fillinBox .less140{ width: calc(100% - 122px); float: left;}
+.setBox .fillinBox .btn_default{width: inherit; display: inline-block;}
+.setBox .fillinBox .verification .btn_default a{ min-width: 90px; padding: 10px 5px;}
+.setBox .fillinBox ul.shop_info_set{ padding-bottom: 20px; }
 
 .setBox .styled-select { border: 1px solid #e0e0e0; width:calc(100% - 2px) ; min-height: 22px; -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out; overflow: hidden; background: url(../images/icon_arr.png) right center no-repeat #fff;}
 .setBox .styled-select select { width:100%; width: calc(100% - 20px); padding: 8px 10px; min-height: 24px; line-height: 24px; *width:120%; _width:120%;  background:transparent; text-align: center;  font-size: 15px; border: 0; border-radius:0; -webkit-appearance: none;  }
@@ -208,30 +220,48 @@ html, body{ height: 100%; }
 :root .setBox .styled-select{ width:\9\0; background-color: url(../images/icon_arr.png) right center no-repeat #f1f0f0\9\0 !important; background-size: contain;}
 :root .setBox .styled-select select{ width:120%\9\0 !important; background: transparent\9\0 !important;}
 :root .setBox .styled-select select option{ background-color:#fff\9\0; padding:5px 0\9\0;}
+
+.setBox .fillinBox .storePhoto{padding-bottom: 20px;}
+.setBox .fillinBox .storePhoto .the_img{ width: 250px; height: 108px; text-align: center; background-color: #fff; }
+.setBox .fillinBox .storePhoto p.the_reminder{ width: calc(100% - 282px);}
+.setBox .fillinBox .storePhoto p.the_reminder a{margin-right: 10px;}
+
+/*.setBox .fillinBox .goodsPhoto a.btn_wireframe{margin-top: 12px; border-radius: 4px; height: 24px; color: #888888; display: inline-block; min-width: 80px; text-align: center; padding: 5px 10px; border: 1px solid #888888; }
+.setBox .fillinBox .goodsPhoto a.btn_wireframe:hover{ border-color: #666; color: #666; text-decoration: none; }
+*/
 /*pop-up 網站設定 end*/
 
 .main_contents .user_infoDate{ width: 100%; max-width: 760px; padding-bottom: 50px;}
 .main_contents .user_infoDate .btn_default{ text-align: left;}
 .main_contents .user_infoDate .btn_default a{  text-align: center; }
-.main_contents .user_infoDate .setBox .fillinBox{padding-bottom: 50px;}
-.main_contents .user_infoDate .setBox .w408{ max-width: 388px }
 
 .main_contents .user_infoDate .verification input{ float: left; }
 .main_contents .user_infoDate .verification .btn_default{ float: left; width: inherit;}
 .main_contents .user_infoDate .verification .btn_default a{ min-width: 90px; padding: 10px 5px;}
 .main_contents .user_infoDate .verification .less140{ width: calc(100% - 122px); max-width: calc(428px - 140px);}
 
-.main_contents .user_infoDate .setBox .for_note{ display: inline-block; padding: 0 12px; font-size: 14px; color: #77aa44; font-weight: bold; line-height: 42px; }
-.main_contents .user_infoDate .setBox .for_note i{padding-right: 5px;}
-.main_contents .user_infoDate .setBox .color_red{color: #ff2121;}
+.setBox .for_note{ display: inline-block; padding: 0 12px; font-size: 14px; color: #77aa44; font-weight: bold; line-height: 42px; }
+.setBox .for_note i{padding-right: 5px;}
+.setBox .color_red{color: #ff2121;}
 
-.main_contents .user_infoDate .setBox .fillinBox li.the_userBD .w70{ min-width: 88px; width: inherit; display: inline-block; margin-right: 5px;}
-.main_contents .user_infoDate .setBox .fillinBox li.change_PW input{ margin-bottom: 10px; }
+.main_contents .user_infoDate .setBox .w408{ max-width: 388px }
+.main_contents .user_infoDate .setBox .fillinBox{padding-bottom: 50px;}
+.main_contents .user_infoDate .setBox .fillinBox .the_userBD .w70{ min-width: 88px; width: inherit; display: inline-block; margin-right: 5px;}
+.main_contents .user_infoDate .setBox .fillinBox .change_PW input{ margin-bottom: 10px; }
+.main_contents .user_infoDate .setBox .fillinBox textarea.h_200{ min-height: 170px; text-align: justify; }
+.main_contents .user_infoDate .setBox .fillinBox .shipping_costs input{ max-width: 100px; float: left; }
+.main_contents .user_infoDate .setBox .fillinBox .shipping_costs p{ font-size: 13px; color: #666; float: left; line-height: 42px; padding: 0 10px; }
+
 
 .main_contents .user_infoDate .setBox p.info_show{ border-bottom: 1px solid #e0e0e0; color: #333; width:calc(100% - 20px); padding: 8px 10px; font-size: 15px; line-height: 24px;}
 .main_contents .user_infoDate .setBox ul.subscription li{ text-align: left; }
 .main_contents .user_infoDate .setBox ul.subscription .the_radio{ width: 15px; height: 44px; float: left; }
 .main_contents .user_infoDate .setBox ul.subscription label{float: left; padding-left: 12px;}
+
+.main_contents .user_infoDate .setBox .text_select .the_radio{ width: 15px; height: 44px; float: left; }
+.main_contents .user_infoDate .setBox .text_select label{float: left; padding-left: 8px;}
+.main_contents .user_infoDate .setBox .text_select span{ color: #333; display: inline-block; line-height: 44px; padding-right: 15px; font-size: 14px;}
+.main_contents .user_infoDate .setBox .none_function{ cursor: not-allowed; opacity: .5; }
 
 /*會員中心 - 表單/網站瀏覽量*/
 .reportDataBox{width: 100%;}
@@ -246,9 +276,9 @@ html, body{ height: 100%; }
 .reportDataBox .top_tools p.open_web i{padding-left: 8px;}
 
 .reportDataBox .sub_tools{width: 100%; padding: 30px 0;}
-.reportDataBox .sub_tools p.download{ float: left; line-height: 24px;}
+.reportDataBox .sub_tools p.download{ float: left; line-height: 24px; }
 .reportDataBox .sub_tools p.download i{padding-left: 8px;}
-.reportDataBox .sub_tools p.download a{ border-radius: 4px; height: 24px; color: #888888; display: block; min-width: 80px; text-align: center; padding: 5px 10px; border: 1px solid #888888; }
+.reportDataBox .sub_tools p.download a{ border-radius: 4px; height: 24px; color: #888888; display: block; min-width: 80px; text-align: center; padding: 5px 10px; border: 1px solid #888888;}
 .reportDataBox .sub_tools p.download a:hover{ border-color: #666; color: #666; }
 
 .reportDataBox .sub_tools .searchBox{ float: right; text-align: right; }
@@ -260,6 +290,23 @@ html, body{ height: 100%; }
 .reportDataBox .sub_tools p.btn_tools a{color: #27d0ca;border-radius: 40px; display: inline-block; margin-left:5px; min-width: inherit; padding: 5px 20px;}
 .reportDataBox .sub_tools p.btn_tools a.btn_in{ background-color: #27d0ca; color: #fff; }
 
+/*購物網站 - 商品設定相關*/
+.product_list_data{ width: 100%; overflow-x: auto; overflow-y: hidden; margin-bottom: 30px;}
+.product_list_data .for_product_info{ width: 100%; background-color: #fff; font-size: 14px; color: #666; border-bottom: 1px solid #e4e4e4;}
+.product_list_data .for_product_info .top_title{ background-color: #f5f5f5; text-align: left; font-weight: normal;}
+.product_list_data .for_product_info th, .product_list_data .for_product_info td{ padding:18px 18px; border-bottom: 1px solid #f5f5f5; vertical-align: middle; white-space: nowrap;}
+.product_list_data .for_product_info th .the_radio, .product_list_data .for_product_info td .the_radio{ width: 24px; height: 16px; }
+.product_list_data .for_product_info th{ border-color: #e4e4e4; border-top:1px solid #e4e4e4; }
+.product_list_data .for_product_info tr:hover{background-color: #f5f5f5;}
+.product_list_data .for_product_info tr.top_title:hover{background-color:#f5f5f5;}
+.product_list_data .for_product_info tr.br_color_blue{background-color: #e2ecec;}
+
+.product_list_data .for_product_info a{ color: #666; }
+.product_list_data .for_product_info a:hover{ color: #27d0ca; text-decoration: underline;}
+.product_list_data .for_product_info i{padding: 0px 15px; display: inline-block;}
+.product_list_data .for_product_info a.btn_tools{ border-radius: 40px; display: inline-block; background-color: #27d0ca; color: #fff; min-width: inherit; padding: 5px 20px;}
+.product_list_data .for_product_info a.btn_tools:hover{text-decoration: none;}
+
 .main_contents .gmbBox{ max-width: 760px;}
 .main_contents .gmbBox .setBox .top_title{margin-bottom: 30px;}
 .main_contents .gmbBox .setBox .top_title p a{ color: #27d0ca;}
@@ -270,6 +317,36 @@ html, body{ height: 100%; }
 .main_contents .gmbBox .top_tools .btn_default{float: none; margin-bottom: 15px; padding-left: 0;}
 .main_contents .gmbBox .top_tools .btn_default a{ min-width: 110px; }
 .main_contents .gmbBox .top_tools p.p_gray{ color: #888888; }
+
+.orderSearch{ padding-bottom: 50px;}
+.orderSearch .setBox .fillinBox ul li{width: 50%; float: left;}
+.orderSearch .setBox .fillinBox ul li.day_calendar{position: relative;}
+.orderSearch .setBox .fillinBox ul li.day_calendar i{ position: absolute; top: 1px; right: 20px; cursor: pointer; color: #666; width: 40px; height: 40px; line-height: 40px; text-align: center; background-color: #fff;}
+
+.orderSearch .setBox label{ float: left; width: 120px; }
+.orderSearch .setBox input{ float: left; width:calc(100% - 160px);}
+.orderSearch .setBox .styled-select{max-width: inherit; width:calc(100% - 140px); }
+.orderSearch .setBox .btn_default{padding-left: 0px; margin-top: 15px; float: none; }
+.orderSearch .top_tools .btn_default a{min-width: 124px;}
+
+.orderSearch p.sub_reminder{ padding-bottom: 25px; color: #666; line-height: 18px;}
+.orderSearch p.sub_reminder a{ color: #27d0ca;}
+.orderSearch p.sub_reminder a:hover{ text-decoration: underline; }
+.orderSearch p.sub_reminder span{ font-weight: bold; }
+.orderSearch p.sub_reminder span.p_pink{ color: #ff5e8f;}
+.orderSearch .sub_tools{padding:40px 0 0 0;}
+.orderSearch .sub_tools p.download{text-align: left; width: 100%;}
+.orderSearch .sub_tools p.download a{ display: inline-block; margin-right: 10px;}
+.orderSearch .sub_tools p.download a.none_function{ cursor: not-allowed; opacity: .5; }
+.orderSearch .sub_tools p.download a.none_function:hover{ border-color: #888; color: #888; }
+.orderSearch .no_pa{padding-top: 0;}
+.for_goods_edit .the_one{ border: 1px solid #e6e6e6; font-size: 14px; text-align: center; width:calc(100% - 22px); height: 30px; padding: 2px 10px; font-size: 15px; line-height: 24px; color: #333;}
+.for_goods_edit .the_money{max-width: 88px;}
+.for_goods_edit .the_photo{ width: 60px; height: 60px; background-color: #fff;}
+.for_goods_edit select.the_one{min-width: 110px;}
+.for_goods_edit a.link{ color: #27d0ca; font-size: 13px; }
+.for_goods_edit a.link span{padding-top: 8px; display: block; }
+/*購物網站 - 商品設定相關 END*/
 
 /*footer*/
 .FooterBox{ width: 100%; background-color: #333; padding: 65px 0 70px 0;}
@@ -314,6 +391,24 @@ html, body{ height: 100%; }
 .mfp-fade.mfp-wrap .mfp-content { opacity: 0; -webkit-transition: all 0.15s ease-out;  -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content { opacity: 1;}
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content { opacity: 0;}
+.popup-w-s{max-width: 360px;}
+.popup-w-s .setBox .top_title::after{ display: none;}
+
+.width-M {max-width: 1000px;}
+.setBox .order_editBox ul{ width:calc(40% - 30px); float: left;}
+.setBox .order_editBox label{ width: 100px; float: left; }
+.setBox .order_editBox input{ width:calc(100% - 130px); float: left; }
+.setBox .order_editBox ul.order_list{ float: right; width:60%;}
+.setBox .order_editBox h4{font-weight: bold; color: #27d0ca; padding: 15px 0;}
+.setBox .order_editBox p.info_show{ float: left; color: #333; width:calc(100% - 110px); padding: 8px 0px; font-size: 15px; line-height: 24px; min-height: 24px;}
+.setBox .order_editBox p.label_title{font-size: 13px;}
+.setBox .order_editBox .purchaseDetails{font-size: 14px; border-top: 1px solid #e0e0e0; padding-bottom: 20px;}
+.setBox .order_editBox .purchaseDetails td, .setBox .order_editBox .purchaseDetails th{ padding: 15px 0; vertical-align: middle; white-space: nowrap;}
+.setBox .order_editBox .purchaseDetails th{ color: #666; background-color: #f9f9f9; font-weight: normal; font-size: 13px; }
+
+.setBox .order_editBox .purchaseDetails .total_amount{ background-color: #e2ecec; font-size: 18px; font-weight: bold;}
+.setBox .order_editBox .purchaseDetails .total_amount span{ color: #ff2121; }
+.setBox .order_editBox .purchaseDetails .name{max-width: 100px; white-space: pre-wrap; padding-right: 10px; text-align: justify;}
 /*popup - style end*/
 
 
@@ -325,6 +420,9 @@ html, body{ height: 100%; }
 
 @media (max-width:1200px){
 	.ContentsBox{ width:calc(100% - 40px);}
+	.orderSearch .setBox .fillinBox ul li{width: 100%;}
+	.orderSearch .setBox input{width: calc(100% - 144px);}
+	.orderSearch .setBox .styled-select{width: calc(100% - 124px);}
 }
 
 @media (max-width:1000px){
@@ -335,9 +433,10 @@ html, body{ height: 100%; }
 	.main_contents .rightData .dataBox{ width: calc(100% - 44px); padding-left: 44px; }
 	.main_contents .rightData .dataBox h4.top_title{text-align: center;}
 	.main_contents ul.My_template{max-width: inherit;}
-
-	.FooterBox .ContentsBox{ padding-left: 50px; width: calc(100% - 90px); }
 	.main_contents .gmbBox{max-width: inherit;}
+	.FooterBox .ContentsBox{ padding-left: 50px; width: calc(100% - 90px); }
+	.orderSearch .sub_tools p.download{text-align: center;}
+
 }
 
 @media (max-width:900px){
@@ -345,6 +444,7 @@ html, body{ height: 100%; }
 	.HeaderBox ul.userBox li .theUserBox{margin: inherit; right: -15px;}
 	.HeaderBox ul.menu li{ margin: 0 8px;}
 	.main_contents ul.pageBox{text-align: center;}
+	.setBox .order_editBox ul, .setBox .order_editBox ul.order_list{ width: 100%; padding-bottom: 20px; float: none; }
 }
 
 @media (max-width:800px){
@@ -378,7 +478,7 @@ html, body{ height: 100%; }
 	.main_contents ul.My_template .website_info{width: 100%;}
 	.main_contents ul.My_template .website_info h5.web_name{width: 100%;}
 	.main_contents ul.My_template li{ padding: 18px;}
-	.main_contents ul.My_template li p.btn_tools a{padding: 3px 12px;}
+	.main_contents ul.My_template li p.btn_tools a, .product_list_data .for_product_info a.btn_tools{padding: 3px 12px;}
 	.main_contents ul.My_template li .btn_swtich{top: 25px;}
 	.main_contents ul.My_template li.shoppingBox h5{font-size: 18px;}
 	.main_contents ul.My_template li.shoppingBox i{font-size: 36px;}
@@ -397,11 +497,19 @@ html, body{ height: 100%; }
 	.reportDataBox .top_tools p.open_web{font-size: 13px;}
 	.reportDataBox .sub_tools p.btn_tools{ width: 100%; padding-top: 15px; }
 	.reportDataBox .sub_tools p.btn_tools a{margin: 0 5px;}
+
+	.orderSearch .setBox label{ width: 85px;}
+	.orderSearch .setBox input{ width: calc(100% - 109px);}
+	.orderSearch .setBox .styled-select{ width: calc(100% - 89px);}
+	.orderSearch .setBox .fillinBox ul li.day_calendar i{ right: 5px;}
+	.orderSearch .sub_tools p.download a{margin-bottom: 10px;}
 	.FooterBox{padding: 20px 0;}
 	.FooterBox .copyright p{font-size: 1vw;}
+	.for_goods_edit .the_one{ font-size: 13px; }
 
 }
 @media (max-width:420px){
+	.btn_default a{padding: 10px 0;}
 	.HeaderBox ul.userBox li .notificationBox{ width: calc(100vw - 100px); right: -8vw;}
 }
 @media (max-width:360px){
@@ -409,3 +517,4 @@ html, body{ height: 100%; }
 	.HeaderBox ul.userBox li .notificationBox .left-box{padding: 15px}
 	.HeaderBox ul.userBox li .notificationBox .notification-content p{font-size: 13px;}
 }
+@media (max-device-width:360px) {.ContentsBox{min-width: initial;}}

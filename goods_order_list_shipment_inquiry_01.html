@@ -2,14 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>holkee 會員中心</title>
+<title>holkee 會員中心 - 出貨紀錄查詢 批次出貨編號: 20171215_001 </title>
 <meta name='description' content=""/>
 <meta name='keywords' content=""/>
 <meta name="MobileOptimized" content="width">
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src="https://use.fontawesome.com/ca17a34927.js"></script>
+<!-- <script src="https://use.fontawesome.com/ca17a34927.js"></script> -->
+<link rel="stylesheet" href="on-server/css/fontawesome-all.css">
+<script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
@@ -31,7 +34,6 @@ $(document).ready(function() {
 
 </head>
 <body>
-
  <header class="HeaderBox">
     <nav class="Menu ContentsBox clearfix">
         <h1 class="logo"><a href="index.html">holkee</a></h1>
@@ -41,7 +43,7 @@ $(document).ready(function() {
             <li><p><a href="#">最新消息</a></p></li>
         </ul>
         <ul class="userBox">
-            <li class="noticeBox"><a><p><i class="fa fa-bell-o" aria-hidden="true"></i>
+            <li class="noticeBox"><a><p><i class="far fa-bell"></i>
                 <span class="text">通知</span>
                 <span class="bell_nb">9</span></p></a>
                 <div class="notificationBox"=>
@@ -117,64 +119,94 @@ $(document).ready(function() {
 </header>
 <main class="main_contents">
     <div class="ContentsBox clearfix">
+        <!-- <a class="ospen_switch"><i class="fa fa-bars" aria-hidden="true"></i></a> -->
         <div class="sideMenu">
             <ul class="mainMenu">
                 <li><h3><a href="#"><i class="fa fa-user" aria-hidden="true"></i>會員專區</a></h3></li>
-                <li><h3><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>我的創作區</a></h3></li>
+                <li><h3><a href="#"><i class="far fa-folder-open" aria-hidden="true"></i>我的創作區</a></h3></li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>查看報表</a></h3>
+                    <h3><a href="#"><i class="fas fa-chart-bar" aria-hidden="true"></i>
+                        <i class="the_arr fas fa-angle-down"></i>查看報表</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">網站瀏覽量</a></p></li>
                         <li><p><a href="#">表單<span class="label_nb">10</span></a></p></li>
                     </ul>
                 </li>
-                <li><h3><a href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i>holkee點數</a></h3></li>
-                <li><h3><a href="#"><i class="fa fa-sliders" aria-hidden="true"></i>行銷廣告<span class="label_remind">廣告即將到期</span></a></h3></li>
-                <li><h3 class="btn_in"><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i>申請GMB<span class="label_remind">免費</span></a></h3></li>
+                <li><h3><a href="#"><i class="fab fa-product-hunt" aria-hidden="true"></i>holkee點數</a></h3></li>
+                <li><h3><a href="#"><i class="fas fa-sliders-h"></i>行銷廣告<span class="label_remind">廣告即將到期</span></a></h3></li>
+                <li><h3><a href="#"><i class="far fa-star" aria-hidden="true"></i>申請GMB<span class="label_remind">免費</span></a></h3></li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>我的訂單</a></h3>
+                    <h3 class="btn_in"><a href="#"><i class="far fa-file-alt"></i>
+                        <i class="the_arr fas fa-angle-down"></i>我的訂單</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">訂單總覽<span class="label_nb">999+</span><!-- <span class="label_remind">999</span> --></a></p></li>
                         <li><p><a href="#">訂單出貨</a></p></li>
-                        <li><p><a href="#">出貨紀錄查詢</a></p></li>
+                        <li><p class="btn_in"><a href="#">出貨紀錄查詢</a></p></li>
                     </ul>
                 </li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>我的商店</a></h3>
+                    <h3><a href="#"><i class="fas fa-home"></i>
+                        <i class="the_arr fas fa-angle-down" aria-hidden="true"></i>我的商店</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">商店資料設定<span class="label_remind">尚未設定</span></a></p></li>
-                        <li><p><a href="#">商品列表<span class="label_remind">尚未設定</span></a></p></li>
-                        <li><p><a href="#">金流帳號設定<span class="label_remind">尚未設定</span></a></p></li>
-                        <li><p><a href="#">物流運費設定<span class="label_remind">尚未設定</span></a></p></li>
+                        <li><p><a href="goods.html">商品列表<span class="label_remind">尚未設定</span></a></p></li>
+                        <li><p><a href="Pay.html">金流帳號設定<span class="label_remind">尚未設定</span></a></p></li>
+                        <li><p><a href="logistics_set.html">物流運費設定<span class="label_remind">尚未設定</span></a></p></li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="rightData">
             <div class="dataBox">
-                <h4 class="top_title">申請GMB</h4>
-                <div class="reportDataBox gmbBox">
-                    <div class="top_tools setBox clearfix">
-                        <div class="top_title">
-                            <h3>免費申請 Google 商家吸引新客戶上門</h3>
-                            <p>以下步驟請使用您的google帳號登入，如無google帳號請先完成註冊流程。<a href="https://accounts.google.com/SignUp?hl=zh-TW" target="_block">前往註冊</a></p>
-                        </div>
-                        <p class="the_reminder">請選擇holkee所建立的網站</p>
-                        <div class="styled-select">
-                            <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇網站">
-                                <option value="0" selected="selected" class="gray">請選擇網站</option>
-                                <option value="1">Pretty girl</option>
-                                <option value="2">hwehiuwheiu</option>
-                                <option value="3">holkee 時代</option>
-                            </select>
-                        </div>
-                        <p class="btn_default"><a href="https://www.holkee.com/event/googlemybusiness/index.php" target="_block">我要申請</a></p>
-                        <p class="the_reminder"><a href="https://support.google.com/business/answer/3038063?hl=zh-Hant" target="_block">成為google商家的好處?</a></p>
+                <h4 class="top_title">批次出貨編號：20171215_001</h4>
+                <div class="reportDataBox orderSearch">
+                    <div class="sub_tools no_pa clearfix">
+                        <p class="download">
+                            <a href="#">整批出貨通知<i class="far fa-envelope"></i></a>
+                            <a href="#">下載出貨總表<i class="fas fa-download"></i></a>
+                        </p>
                     </div>
                 </div>
+                <div class="product_list_data">
+                    <table class="for_product_info" width="100%" border="0" cellspacing="0" cellpadding="0"><!-- 只提供最多5項商品群組 -->
+                        <tr class="top_title">
+                          <th align="center">訂單編號</th>
+                          <th align="center">收件人名稱</th>
+                          <th align="center">訂單建立日期</th>
+                          <th align="center">總金額</th>
+                          <th align="center">出貨方式</th>
+                          <th align="center">訂單狀態</th>
+                        </tr>
+                        <tr>
+                          <td align="center">107788</td>
+                          <td align="center">SandyYu</td>
+                          <td align="center">2017.12.12</td>
+                          <td align="center">3100</td>
+                          <td align="center">7-11取貨</td>
+                          <td align="center">準備出貨</td>
+                        </tr>
+                        <tr>
+                          <td align="center">107789</td>
+                          <td align="center">Wade Hsu</td>
+                          <td align="center">2017.12.30</td>
+                          <td align="center">2400</td>
+                          <td align="center">7-11取貨</td>
+                          <td align="center">準備出貨</td>
+                        </tr>
+                    </table>
+                </div>
+                <ul class="pageBox"> <!-- 最多八個或幾個網站? 就出現頁籤 -->
+                    <li><p><a href="#" class="border">Prev</a></p></li>
+                    <li><p><a href="#">1</a></p></li>
+                    <li><p><a class="btn_in" href="#">2</a></p></li>
+                    <li><p><a href="#">3</a></p></li>
+                    <li><p>...</p></li>
+                    <li><p><a href="#">8</a></p></li>
+                    <li><p><a href="#" class="border">Next</a></p></li>
+                </ul>
+
+                <p class="btn_default"><a href="#">回到上一頁</a></p>
+
             </div>
         </div>
     </div>
@@ -204,9 +236,9 @@ $(document).ready(function() {
         </div>
         <div class="copyright clearfix">
             <ul class="follow_us">
-                <li><a href="#" class="line"></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-line"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-weixin"></i></a></li>
             </ul>
             <p>Copyrights © 2018 All Rights Reserved.</p>
         </div>

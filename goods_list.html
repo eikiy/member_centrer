@@ -9,7 +9,10 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src="https://use.fontawesome.com/ca17a34927.js"></script>
+<!-- <script src="https://use.fontawesome.com/ca17a34927.js"></script> -->
+<link rel="stylesheet" href="on-server/css/fontawesome-all.css">
+<script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
@@ -31,7 +34,6 @@ $(document).ready(function() {
 
 </head>
 <body>
-
  <header class="HeaderBox">
     <nav class="Menu ContentsBox clearfix">
         <h1 class="logo"><a href="index.html">holkee</a></h1>
@@ -41,7 +43,7 @@ $(document).ready(function() {
             <li><p><a href="#">最新消息</a></p></li>
         </ul>
         <ul class="userBox">
-            <li class="noticeBox"><a><p><i class="fa fa-bell-o" aria-hidden="true"></i>
+            <li class="noticeBox"><a><p><i class="far fa-bell"></i>
                 <span class="text">通知</span>
                 <span class="bell_nb">9</span></p></a>
                 <div class="notificationBox"=>
@@ -117,24 +119,25 @@ $(document).ready(function() {
 </header>
 <main class="main_contents">
     <div class="ContentsBox clearfix">
+        <!-- <a class="ospen_switch"><i class="fa fa-bars" aria-hidden="true"></i></a> -->
         <div class="sideMenu">
             <ul class="mainMenu">
                 <li><h3><a href="#"><i class="fa fa-user" aria-hidden="true"></i>會員專區</a></h3></li>
-                <li><h3><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>我的創作區</a></h3></li>
+                <li><h3><a href="#"><i class="far fa-folder-open" aria-hidden="true"></i>我的創作區</a></h3></li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>查看報表</a></h3>
+                    <h3><a href="#"><i class="fas fa-chart-bar" aria-hidden="true"></i>
+                        <i class="the_arr fas fa-angle-down"></i>查看報表</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">網站瀏覽量</a></p></li>
                         <li><p><a href="#">表單<span class="label_nb">10</span></a></p></li>
                     </ul>
                 </li>
-                <li><h3><a href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i>holkee點數</a></h3></li>
-                <li><h3><a href="#"><i class="fa fa-sliders" aria-hidden="true"></i>行銷廣告<span class="label_remind">廣告即將到期</span></a></h3></li>
-                <li><h3 class="btn_in"><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i>申請GMB<span class="label_remind">免費</span></a></h3></li>
+                <li><h3><a href="#"><i class="fab fa-product-hunt" aria-hidden="true"></i>holkee點數</a></h3></li>
+                <li><h3><a href="#"><i class="fas fa-sliders-h"></i>行銷廣告<span class="label_remind">廣告即將到期</span></a></h3></li>
+                <li><h3><a href="#"><i class="far fa-star" aria-hidden="true"></i>申請GMB<span class="label_remind">免費</span></a></h3></li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>我的訂單</a></h3>
+                    <h3><a href="#"><i class="far fa-file-alt"></i>
+                        <i class="the_arr fas fa-angle-down"></i>我的訂單</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">訂單總覽<span class="label_nb">999+</span><!-- <span class="label_remind">999</span> --></a></p></li>
                         <li><p><a href="#">訂單出貨</a></p></li>
@@ -142,44 +145,69 @@ $(document).ready(function() {
                     </ul>
                 </li>
                 <li class="btn_more">
-                    <h3><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
-                        <i class="the_arr fa fa-angle-down" aria-hidden="true"></i>我的商店</a></h3>
+                    <h3 class="btn_in"><a href="#"><i class="fas fa-home"></i>
+                        <i class="the_arr fas fa-angle-down" aria-hidden="true"></i>我的商店</a></h3>
                     <ul class="subMenu">
                         <li><p><a href="#">商店資料設定<span class="label_remind">尚未設定</span></a></p></li>
-                        <li><p><a href="#">商品列表<span class="label_remind">尚未設定</span></a></p></li>
-                        <li><p><a href="#">金流帳號設定<span class="label_remind">尚未設定</span></a></p></li>
-                        <li><p><a href="#">物流運費設定<span class="label_remind">尚未設定</span></a></p></li>
+                        <li><p class="btn_in"><a href="goods.html">商品列表<span class="label_remind">尚未設定</span></a></p></li>
+                        <li><p><a href="Pay.html">金流帳號設定<span class="label_remind">尚未設定</span></a></p></li>
+                        <li><p><a href="logistics_set.html">物流運費設定<span class="label_remind">尚未設定</span></a></p></li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="rightData">
             <div class="dataBox">
-                <h4 class="top_title">申請GMB</h4>
-                <div class="reportDataBox gmbBox">
-                    <div class="top_tools setBox clearfix">
-                        <div class="top_title">
-                            <h3>免費申請 Google 商家吸引新客戶上門</h3>
-                            <p>以下步驟請使用您的google帳號登入，如無google帳號請先完成註冊流程。<a href="https://accounts.google.com/SignUp?hl=zh-TW" target="_block">前往註冊</a></p>
-                        </div>
-                        <p class="the_reminder">請選擇holkee所建立的網站</p>
-                        <div class="styled-select">
-                            <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="請選擇網站">
-                                <option value="0" selected="selected" class="gray">請選擇網站</option>
-                                <option value="1">Pretty girl</option>
-                                <option value="2">hwehiuwheiu</option>
-                                <option value="3">holkee 時代</option>
-                            </select>
-                        </div>
-                        <p class="btn_default"><a href="https://www.holkee.com/event/googlemybusiness/index.php" target="_block">我要申請</a></p>
-                        <p class="the_reminder"><a href="https://support.google.com/business/answer/3038063?hl=zh-Hant" target="_block">成為google商家的好處?</a></p>
-                    </div>
+                <h4 class="top_title">商品列表</h4>
+                <div class="product_list_data">
+                    <table class="for_product_info" width="100%" border="0" cellspacing="0" cellpadding="0"><!-- 只提供最多5項商品群組 -->
+                        <tr class="top_title">
+                          <th>商品名稱</th>
+                          <th align="center">商品建立日期</th>
+                          <th width="140px" align="center">編輯/刪除</th>
+                        </tr>
+                        <tr>
+                          <td>男性開領短袖襯衫</td>
+                          <td align="center">2017.12.12</td>
+                          <td align="center"><a class="btn_tools" href="#">編輯</a><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除訂單"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td>男性開領短袖襯衫</td>
+                          <td align="center">2017.12.12</td>
+                          <td align="center"><a class="btn_tools" href="#">編輯</a><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除訂單"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td>男性開領短袖襯衫</td>
+                          <td align="center">2017.12.12</td>
+                          <td align="center"><a class="btn_tools" href="#">編輯</a><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除商品"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td>男性開領短袖襯衫</td>
+                          <td align="center">2017.12.12</td>
+                          <td align="center"><a class="btn_tools" href="#">編輯</a><a class="popup-link" href="#popup"><i class="far fa-trash-alt" title="刪除訂單"></i></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="user_infoDate">
+                    <p class="btn_default"><a href="#">新增商品</a></p>
                 </div>
             </div>
         </div>
     </div>
-</main>
 
+<div id="popup" class="white-popup mfp-hide popup-w-s">
+    <form class="setBox">
+        <div class="top_title">
+            <h3>確認商品刪除</h3>
+            <p>商品刪除後將無法恢復喔！</p>
+        </div>
+        <div class="fillinBox">
+            <p class="btn_default"><a href="#">確認</a><a class="color_gray" href="#">取消</a></p>
+        </div>
+    </form>
+</div>
+
+</main>
 
 
 <footer class="FooterBox">
@@ -204,9 +232,9 @@ $(document).ready(function() {
         </div>
         <div class="copyright clearfix">
             <ul class="follow_us">
-                <li><a href="#" class="line"></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-line"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-weixin"></i></a></li>
             </ul>
             <p>Copyrights © 2018 All Rights Reserved.</p>
         </div>
