@@ -87,7 +87,7 @@ html, body{ height: 100%; }
 .main_contents .sideMenu ul li h3{ font-size: 16px; }
 .main_contents .sideMenu ul li h3 a{ color: #555555; display: block; position: relative; line-height: 48px; padding-left: 45px; }
 .main_contents .sideMenu ul li h3 a:hover{ color:#27d0ca;}
-.main_contents .sideMenu ul li h3 i{ position: absolute; top: 15px; left: 15px;}
+.main_contents .sideMenu ul li h3 i{ position: absolute; top: 15px; left: 15px; width: 20px;text-align: center;}
 .main_contents .sideMenu ul li h3 i.the_arr{position: absolute; left: inherit; right: 20px;}
 .main_contents .sideMenu ul li h3.btn_in{ background-color: #27d0ca; }
 .main_contents .sideMenu ul li h3.btn_in a{color: #fff;}
@@ -106,10 +106,14 @@ html, body{ height: 100%; }
 
 .main_contents .rightData{float: left; width:calc(100% - 299px); min-height: calc(100vh - 364px); padding: 40px 0 60px 0; border-left: 1px solid #dfdfdf; background-color: #f9f9f9;}
 .main_contents .rightData .dataBox{ width: calc(100% - 160px); margin: 0 auto;}
-.main_contents .rightData .dataBox h4.top_title{font-size: 26px; color: #333; padding-bottom: 35px;}
+.main_contents .rightData .dataBox h4.top_title{font-size: 26px; color: #333; padding-bottom: 35px; position: relative; max-width: 760px;}
 .main_contents .rightData .dataBox h5.sub_title{font-size: 20px; color: #27d0ca; padding-bottom: 15px;}
+
 .main_contents .rightData .dataBox h4.top_title a.link, .main_contents .rightData .dataBox h5.sub_title a.link{ font-size: 13px; color: #27d0ca; border-radius: 4px; padding: 2px 6px; display: inline-block; background-color: #ffad39; color: #fff; margin-left: 5px; vertical-align: middle;}
 .main_contents .rightData .dataBox h4.top_title a.link:hover, .main_contents .rightData .dataBox h5.sub_title a.link:hover{ opacity: .9 ;}
+.main_contents .rightData .dataBox h4.top_title a.add_new_website{ border:1.5px solid #27d0ca; font-size: 14px; font-weight: bold; position: absolute; right: 0; top: 0px; padding: 6px 14px; color: #27d0ca;}
+.main_contents .rightData .dataBox h4.top_title a.add_new_website i{padding-right: 5px; font-size: 12px;}
+.main_contents .rightData .dataBox h4.top_title a.add_new_website:hover{ background-color: #27d0ca; color: #fff; }
 
 .main_contents ul.My_template{ width: 100%; max-width:760px; }
 .main_contents ul.My_template li{ padding: 25px; box-shadow: 0 0 10px rgba(0,0,0,.2); background-color: #fff; margin-bottom: 40px; position: relative; border-radius: 4px; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
@@ -431,7 +435,7 @@ html, body{ height: 100%; }
 	.main_contents .sideMenu:hover{ width: 298px; }
 	.main_contents .rightData{float: inherit; width: 100%; border: none;}
 	.main_contents .rightData .dataBox{ width: calc(100% - 44px); padding-left: 44px; }
-	.main_contents .rightData .dataBox h4.top_title{text-align: center;}
+	.main_contents .rightData .dataBox h4.top_title{text-align: center; max-width: initial;}
 	.main_contents ul.My_template{max-width: inherit;}
 	.main_contents .gmbBox{max-width: inherit;}
 	.FooterBox .ContentsBox{ padding-left: 50px; width: calc(100% - 90px); }
@@ -453,6 +457,7 @@ html, body{ height: 100%; }
 }
 
 @media (max-width:700px){
+	.main_contents .rightData .dataBox h4.top_title a.add_new_website{ position: initial; display: block; margin-top: 15px; padding: 8px 15px; }
 	.FooterBox .navbar p.logo{ float: none; height: 22px; margin: 0 auto 5px auto; background-position: center;}
 	.FooterBox .copyright{text-align: center;}
 	.FooterBox .copyright ul.follow_us{float: inherit; text-align: inherit;}
