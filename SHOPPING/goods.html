@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>holkee 購物網站</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <link rel="stylesheet" href="on-server/css/fontawesome-all.css"> -->
+<!-- <script type="text/javascript" src="on-server/js/fontawesome-all.css.js"></script> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+
+<link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
+<script type="text/javascript" src="js/retina.min.js"></script>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+
+</head>
+<body class="page">
+<div class="mobile-nav" id="sideMenu">
+        <ul class="Oneself">
+            <li><p><a href="index.html">首頁</a></p></li>
+            <li><p><a href="notes.html">退換貨及退款須知</a></p></li>
+            <li><p><a href="transport.html">運送服務</a></p></li>
+            <li><p><a href="terms.html">其他條款</a></p></li>
+            <li><p><a href="service.html">客服中心</a></p></li>
+        </ul>
+</div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="jvmobilemenu/jv-jquery-mobile-menu-min.js"></script>
+    <script src="js/script-right.js"></script>
+
+<header class="HeaderBox">
+    <nav class="Menu ContentsBox clearfix">
+        <!-- <h1 class="logo"><a href="index.html"><img src="images/logo_test_03.jpg" height="100%" alt="LOGO"></a></h1> --> <!-- 有上傳logo的狀態 -->
+        <h1><a href="index.html">流行時尚。CITY</a></h1> <!-- 純文字的狀態 -->
+        <ul class="menu">
+            <li><p class="btn_in"><a href="index.html">首頁</a></p></li>
+            <li><p><a href="notes.html">退換貨及退款須知</a></p></li>
+            <li><p><a href="transport.html">運送服務</a></p></li>
+            <li><p><a href="terms.html">其他條款</a></p></li>
+            <li><p><a href="service.html">客服中心</a></p></li>
+        </ul>
+    </nav>
+</header>
+<main class="shopping_contents">
+    <div class="ContentsBox">
+        <div class="productBox clearfix">
+            <div class="photoBox">
+                <div class="mainPhoto">
+                    <a href="#"><img src="images/fashion_ciothes_05.jpg" width="100%" alt=""></a>
+                </div>
+            </div>
+            <div class="rightInfoBox">
+                <h3 class="product_title">時尚造型外套</h3>
+                <h3 class="product_price">NT$1099</h3>
+                <p class="product_description">今年吹起一股長大衣風潮， 所以衣櫥免不了一件實搭又大方的長大衣外套</p>
+                <p class="ex">請選擇樣式</p>
+                <div class="styleBox"><!-- I、選完這列才會出現下面那一列 -->
+                    <a href="#">玫瑰紅</a>
+                    <a class="btn_selected" href="#">派對黑</a>
+                    <a href="#">時尚粉</a>
+                    <a href="#">深邃藍</a>
+                </div>
+                <div class="styleBox"><!-- II、 如果此商品沒有第二列樣式就不會出現 -->
+                    <a class="btn_selected">L</a>
+                    <a class="goods_none" disabled>S (售完)</a>
+                </div>
+                <!-- 沒有選擇樣式就按按鈕會跳提醒語 -->
+                <p class="for_note"><i class="fas fa-exclamation-circle"></i>請選擇樣式</p>
+                <table class="product_info" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <th class="top_title">商品供應</th>
+                        <td>預購</td>
+                    </tr>
+                    <tr>
+                        <th class="top_title">商品須知</th>
+                        <td>預購品追加期：7-20個工作天(不含例假日)</td>
+                    </tr>
+                </table>
+                <p class="ex">請選擇商品數量</p>
+                <div class="select_quantity" data-radium="true">
+                    <input type="number" class="qty_input" value="1">
+                    <div class="qty-adjust" data-radium="true">
+                        <span class="plus"><i class="fa fa-plus"></i></span>
+                        <span class="minus minus_none" disabled><i class="fa fa-minus"></i></span>
+                    </div>
+                </div>
+                <div class="btnBox clearfix">
+                    <a class="btn btn_none" disabled>直接購買</a>
+                    <a class="btn btn_none" disabled>加到購物車</a>
+                    <a class="car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a>
+                </div>
+                <div class="btnBox clearfix">
+                    <a class="btn gobuy popup-link" href="#popup1">直接購買</a>
+                    <a class="btn popup-link" href="#popup2">加到購物車</a>
+                    <a class="car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- 購物車 lightbox -->
+<div id="popup" class="white-popup mfp-hide width-M">
+    <form class="setBox">
+        <div class="top_title none_line">
+            <h3>購物車</h3>
+            <p>目前有 1 項購物商品!</p>
+        </div>
+
+         <div class="fillinBox order_editBox clearfix">
+            <ul class="shopping_car_list">
+                <li class="top_title clearfix">
+                    <div class="sbox car_name">
+                        <p>商品名稱</p>
+                    </div>
+                    <div class="sbox car_nb">
+                        <p>數量</p>
+                    </div>
+                    <div class="sbox car_money">
+                        <p>小計</p>
+                    </div>
+                    <div class="sbox car_delete">
+                        <p>移除</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="sbox car_name">
+                        <a href="#" class="clearfix"><div class="Photo">
+                            <img src="images/fashion_ciothes_05.jpg" width="100%" alt="">
+                        </div>
+                        <p class="product_name"><span class="mainTitle">時尚造型外套</span><span class="style_for">派對黑</span><span class="style_for">L</span><span class="money">NT$1099</span></p></a>
+                    </div>
+                    <div class="sbox car_nb">
+                        <div class="select_quantity" data-radium="true">
+                            <input type="number" class="qty_input" value="1">
+                            <div class="qty-adjust" data-radium="true">
+                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                <span class="minus minus_none"><i class="fa fa-minus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sbox car_money">
+                        <p>NT$1099</p>
+                    </div>
+                    <div class="sbox car_delete">
+                        <a><i class="far fa-trash-alt" title="移除商品"></i></a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="sbox car_name">
+                        <a href="#" class="clearfix"><div class="Photo">
+                            <img src="images/fashion_ciothes_06.jpg" width="100%" alt="">
+                        </div>
+                        <p class="product_name"><span class="mainTitle">奧黛麗赫本洋裝(白)</span><span class="style_for">長版</span><span class="style_for">M</span><span class="money">NT$1599</span></p></a>
+                    </div>
+                    <div class="sbox car_nb">
+                        <div class="select_quantity" data-radium="true">
+                            <input type="number" class="qty_input" value="1">
+                            <div class="qty-adjust" data-radium="true">
+                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                <span class="minus minus_none"><i class="fa fa-minus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sbox car_money">
+                        <p>NT$1599</p>
+                    </div>
+                    <div class="sbox car_delete">
+                        <a><i class="far fa-trash-alt" title="移除商品"></i></a>
+                        <a class="yesDelets"><p>確定刪除</p></a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="sbox car_name">
+                        <a href="#" class="clearfix"><div class="Photo">
+                            <img src="images/fashion_ciothes_07.jpg" width="100%" alt="">
+                        </div>
+                        <p class="product_name"><span class="mainTitle">80年代造型套裝</span><span class="style_for">文青書生</span><span class="style_for">M</span><span class="money">NT$2000</span></p></a>
+                    </div>
+                    <div class="sbox car_nb">
+                        <div class="select_quantity" data-radium="true">
+                            <input type="number" class="qty_input" value="1">
+                            <div class="qty-adjust" data-radium="true">
+                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                <span class="minus minus_none"><i class="fa fa-minus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sbox car_money">
+                        <p>NT$2000</p>
+                    </div>
+                    <div class="sbox car_delete">
+                        <a><i class="far fa-trash-alt" title="移除商品"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="fillinBox">
+            <p class="btn_default"><a class="popup-link btn_none" href="#popup1">我要結帳</a><a class="color_gray" href="#">繼續購物</a></p>
+        </div>
+    </form>
+</div>
+
+<!-- 點選 【直接購買】按鈕 會呈現 -->
+<div id="popup1" class="white-popup mfp-hide">
+    <form class="setBox">
+        <div class="top_title">
+            <h3>訂購資訊</h3>
+        </div>
+        <div class="fillinBox order_editBox clearfix">
+            <ul>
+                <li><h4>收件人資訊</h4></li>
+                <li class="clearfix">
+                    <label for=""><p class="label_title">真實姓名</p></label>
+                    <input id="" name="" type="text" value="Sandy Yu">
+                </li>
+                <li class="clearfix">
+                    <label for=""><p class="label_title">email</p></label>
+                    <input id="" name="" type="text" value="abcd1111@service.com">
+                </li>
+                <li class="clearfix">
+                    <label for=""><p class="label_title">手機號碼</p></label>
+                    <input id="" name="" type="text" value="0988172456">
+                </li>
+                <li class="clearfix">
+                    <label for=""><p class="label_title">付款方式</p></label>
+                    <div class="form-select the_one">
+                        <select class="" name="" required="" data-parsley-min="1" data-parsley-min-message="付款方式">
+                            <option value="0">7-11超商付款</option>
+                            <option value="1">全家付款</option>
+                            <option value="2">信用卡付款</option><!--信用卡付款 只有"黑貓宅急便"-->
+                        </select>
+                    </div>
+                </li>
+                <!--當選擇7-11付款方式時，運送方式帶出7-11超商取貨-->
+                <li class="clearfix">
+                    <label for=""><p class="label_title">運送方式</p></label>
+                    <div class="form-select the_one w_en">
+                        <select class="" name="" required="" data-parsley-min="1" data-parsley-min-message="運送方式">
+                            <option value="0" class="gray">Pay at pickup (7-ELEVEn)</option>
+                            <option value="1">全家取貨</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <label for=""><p class="label_title">選擇門市</p></label>
+                    <p class="info_show">南京建國門市<a class="store_pickup" href="#">選擇取貨門市</a></p>
+                </li>
+                <!---->
+                <!--當選擇信用卡付款方式時，運送方式帶出黑貓宅急便-->
+                <li class="clearfix">
+                    <label for=""><p class="label_title">收件人市話</p></label>
+                    <div class="the_phone clearfix">
+                        <input class="phone_w01 font-s" id="" name="" type="text" placeholder="Area code">
+                        <input class="phone_w02" id="" name="" type="text">
+                    </div>
+                </li>
+                <!-- 台灣地址顯示 -->
+                <li class="clearfix">
+                    <label for=""><p class="label_title">地址</p></label>
+                    <div class="the_area the_address clearfix">
+                        <div class="form-select the_one">
+                            <select class="" name="" required="" data-parsley-min="1" data-parsley-min-message="縣市">
+                                <option value="0">台北市</option>
+                                <option value="1">台北縣</option>
+                            </select>
+                        </div>
+                        <div class="form-select the_one">
+                            <select class="" name="" required="" data-parsley-min="1" data-parsley-min-message="鄉鎮市區">
+                                <option value="0">文山區</option>
+                                <option value="1">士林區</option>
+                            </select>
+                        </div>
+                        <input class="input_area" id="" name="" type="text" placeholder="郵遞區號">
+                        <input class="add" id="" name="" type="text" placeholder="">
+                    </div>
+                </li>
+                <!-- 其他國家顯示 -->
+                <li class="clearfix">
+                    <label for=""><p class="label_title">Address</p></label>
+                    <div class="the_area the_address clearfix">
+                        <div class="form-select the_one">
+                            <select class="" name="" required="" data-parsley-min="1" data-parsley-min-message="Country">
+                                <option value="0">City</option>
+                                <option value="1">Taiwan</option>
+                            </select>
+                        </div>
+                        <input class="input_area" id="" name="" type="text" placeholder="ZIP">
+                        <input class="add" id="" name="" type="text" placeholder="Address Line 1">
+                        <input class="add" id="" name="" type="text" placeholder="Address Line 2">
+                    </div>
+                </li>
+                <!---->
+                <li class="clearfix">
+                    <label for=""><p class="label_title">備註</p></label>
+                    <input type="text">
+                </li>
+            </ul>
+            <ul class="order_list">
+                <li><h4>商品資訊</h4></li>
+                <li><table class="purchaseDetails" width="100%" border="0" cellspacing="0" cellpadding="0"><!-- 只提供最多5項商品群組 -->
+                        <tr>
+                          <th align="center">商品名稱</th>
+                          <th align="center">數量</th>
+                          <th align="center">金額</th>
+                        </tr>
+                        <tr>
+                          <td class="name">時尚造型外套 - 派對黑 L - NT$1099</td>
+                          <td align="center">1</td>
+                          <td align="center">NT$990</td>
+                        </tr>
+                        <tr>
+                          <td class="name">奧黛麗赫本洋裝(白) - 長版 M - NT$1599</td>
+                          <td align="center">1</td>
+                          <td align="center">NT$990</td>
+                        </tr>
+                        <tr>
+                          <td class="name">80年代造型套裝 - 文青書生 M - NT$2009</td>
+                          <td align="center">1</td>
+                          <td align="center">NT$990</td>
+                        </tr>
+                    </table>
+                    <p class="the_reminder">※您如果同時購買預購以及現貨商品，將會以預購預計出貨日期為訂單出貨日喔，如您希望先寄出現貨商品，請分開下單。</p></li>
+                <li><h4>結帳金額</h4></li>
+                <li><table class="purchaseDetails" width="100%" border="0" cellspacing="0" cellpadding="0"><!-- 只提供最多5項商品群組 -->
+                        <tr>
+                          <td align="right">小計</td>
+                          <td align="center">NT$4698</td>
+                        </tr>
+                        <tr>
+                          <td align="right">運費(7-11取貨)</td>
+                          <td align="center">NT$0 (已達免運門檻)</td>
+                        </tr>
+                        <tr class="total_amount">
+                          <td align="right">總計</td>
+                          <td align="center"><span>NT$4698</span></td>
+                        </tr>
+                    </table>
+                    <p class="for_note"><i class="fas fa-exclamation-circle"></i>您的訂單總金額超過超商付款上限！請重新下單。</p>
+                </li>
+            </ul>
+            <div class="confirm clearfix">
+                <label for="" class="no_w"><input class="the_radio" type="checkbox" checked=""><p>我已詳閱並同意holkee的<a href="#">會員條款</a>和<a href="#">隱私權政策</a></p></label>
+            </div>
+            <p class="btn_default"><a class="btn_none" href="order_done.html">確認訂購</a><a class="color_gray" href="">繼續購物</a></p>
+        </div>
+    </form>
+</div>
+
+<!-- 加入購物車 lightbox -->
+<div id="popup2" class="white-popup mfp-hide popup-w-s">
+    <form class="setBox">
+        <div class="top_title">
+            <h3>已加入購物車</h3>
+            <p>目前有 1 項購物商品!</p>
+        </div>
+        <div class="fillinBox">
+            <p class="btn_default"><a href="#">繼續購物</a></p>
+        </div>
+    </form>
+</div>
+
+<!-- 刪除商品 lightbox -->
+<div id="popup3" class="white-popup mfp-hide popup-w-s">
+    <form class="setBox">
+        <div class="top_title">
+            <h3>你確定要移除這個商品嗎？</h3>
+            <p>有機蘋果 - 法國茱麗葉有機蘋果 禮盒(12顆)</p>
+        </div>
+        <div class="fillinBox">
+            <p class="btn_default"><a href="#">確認</a><a class="color_gray" href="#">取消</a></p>
+        </div>
+    </form>
+</div>
+
+<footer class="shopping_FooterBox pad_bt">
+    <div class="ContentsBox">
+        <div class="navbar clearfix">
+            <p>Powered by</p>
+            <h4 class="logo"><a href="http://www.holkee.com/" target="_blank"><img src="images/logo.png" height="100%" alt="LOGO"></a></h4>
+        </div>
+        <div class="copyright clearfix">
+            <p>Copyrights © 2018 All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+

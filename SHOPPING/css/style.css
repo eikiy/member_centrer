@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+input, textarea { margin:0; padding:0;}
+* {-webkit-text-size-adjust:none;}
+a{text-decoration:none;}
+fieldset, img { border:0;}
+ol, ul { list-style:none;}
+abbr, acronym { border:0;}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+* html .clearfix {height: 1%;}
+*:first-child + html .clearfix { min-height: 1%;}
+
+body, h1, h2, h3, h4, h5, h6, p {font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #333;}
+p{font-size: 15px;}
+a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+a:hover{ text-decoration:none;}
+select, input, textarea, button {  font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
+*:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; }
+html{ height: 100%; }
+/*body{ height: 100%; }*/
+
+/*===== start ======*/
+.ContentsBox{ max-width: 1100px; margin: 0 auto; min-width: 320px;}
+
+.shopping_contents{ width: 100%; background-color:#f9f9f9; min-height: calc( 100vh - 243px);}
+.shopping_contents ul.product_list{ width: 100%;  padding: 40px 0;}
+.shopping_contents ul.product_list li{ width:calc( 33.33% - 50px);  float: left; padding:25px;}
+.shopping_contents ul.product_list li .titleBox{min-height: 85px; padding: 0 18px; background-color: #fff;}
+.shopping_contents ul.product_list li h2{ color: #333; font-size: 17px; line-height: 20px; margin: 10px 0 5px 0; max-height: 40px; overflow-y: hidden; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 20px; height: 20px * 2;}
+.shopping_contents ul.product_list li p{font-size: 15px; font-family: 'Roboto' !important, sans-serif; font-style: 600; color: #F94F4F; padding-top: 5px;}
+.shopping_contents ul.product_list li a{ box-shadow: 0 0 10px rgba(0,0,0,.2); background-color: #fff; display: inline-block; width: 100%; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.shopping_contents ul.product_list li a:hover{ box-shadow:rgba(0,0,0,0.25) 0px 14px 35px, rgba(0,0,0,0.22) 0px 10px 18px; }
+
+/*購物網站的header*/
+.HeaderBox{ width: 100%; padding: 16px 0; min-height: 30px; background-color: #fff; border-bottom: 2px solid #27d0ca; z-index: 15; }
+.HeaderBox h1{ text-align: center;  font-size: 20px; padding: 15px 0;}
+.HeaderBox h1 a{ color: #666;}
+.HeaderBox h1.logo{ width: 250px; height: 95px; margin: 0 auto; padding-bottom: 8px;}
+.HeaderBox h1.logo a{ width: 250px; height: 95px; display: block; text-align: center; background-color: #fff;}
+.HeaderBox h1.logo a img{ max-width: 100% ;max-height: 100%;}
+.HeaderBox p{ line-height: 40px; font-size: 14px; font-weight: bold; }
+.HeaderBox ul.menu{ text-align: center;}
+.HeaderBox ul.menu li{display: inline-block; margin: 0 16px;}
+.HeaderBox ul.menu p a{ color: #333; cursor: pointer;}
+.HeaderBox ul.menu p a:hover{ color: #27d0ca; }
+.HeaderBox ul.menu p.btn_in a{ color: #27d0ca; }
+
+
+/*main_contents*/
+.main_contents{width: 100%; background-color: #f9f9f9; padding-top: 62px;}
+.main_contents .ContentsBox{ width: 100%; max-width: 1600px; background-color: #fff;}
+.main_contents .sideMenu{float: left; width: 298px;}
+
+.serviceBox{ width: 100%; padding:50px 0; text-align: center; }
+.serviceBox h4{ display: none; font-size: 20px; font-weight: bold; padding-bottom: 15px;}
+.serviceBox ul li{ padding-bottom: 25px; }
+.serviceBox ul li p{ font-size: 16px; }
+.serviceBox ul li p a{ color: #27d0ca; text-decoration: underline; }
+.serviceBox ul li p a:hover{text-decoration: none;}
+.serviceBox ul li p span{ display: block; font-size: 14px; color: #666; padding-bottom: 10px; }
+
+.notesBox{ width: 100%; max-width: 800px; margin: 0 auto; padding:50px 0; }
+.notesBox h4{ display: none; font-size: 20px; font-weight: bold; padding-bottom: 15px; }
+.notesBox p{ text-align: justify; white-space: pre-wrap; line-height: 24px;}
+
+.noGood{ min-height:calc(100vh - 260px); display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.noGood p.notes{ position: relative; color: #999; font-size: 16px; padding-top: 60px;}
+.noGood p.notes::before{display: block; content: '\f187'; width: 100%; text-align: center; top: 0; left: 0; position: absolute;font-family: Font Awesome\ 5 Free; font-weight: 900; font-size:45px;}
+
+/*單一商品頁*/
+.productBox{width: 100%; padding: 50px 0;}
+.productBox .photoBox{ float: left; width: 310px; padding-right: 50px;}
+.productBox .photoBox .mainPhoto{ max-width: 300px; margin: 0 auto;}
+
+.productBox .rightInfoBox{ width: 100%; float: left; max-width: calc(100% - 360px);}
+.productBox .rightInfoBox h3.product_title{ color: #333; font-size: 22px; line-height: 20px; margin: 5px 0; }
+.productBox .rightInfoBox h3.product_price{font-size: 20px; font-family: 'Roboto' !important, sans-serif; font-style: 600; color: #F94F4F; padding: 5px 0 10px 0;}
+.productBox .rightInfoBox p.product_description{ font-size: 14px; color: #666; padding-bottom: 10px; max-width: 660px;}
+
+.productBox .product_info{ width: 100%;  font-size: 14px; color: #333; padding: 10px 0; max-width: 660px;}
+.productBox .product_info th, .productBox .product_info td{padding: 10px 0 ;}
+.productBox .product_info .top_title{ width: 120px; color: #666; text-align: left; font-weight: normal;}
+/*.productBox .product_info span.good_remarks{display: block; color: #666; padding-top: 5px;}*/
+
+.productBox .rightInfoBox p.ex{ color: #999; font-size: 14px; padding: 10px 0;}
+.productBox .rightInfoBox p.theLine{ border-bottom: 1px solid #efefef; padding-bottom: 15px; margin-bottom: 8px;}
+
+.productBox .rightInfoBox .styleBox{ width: 100%; text-align: left; padding-bottom: 8px;}
+.productBox .rightInfoBox .styleBox a{ cursor: pointer; font-size: 14px; color: #555; display: inline-block; padding: 8px 16px; line-height: 20px; border-width: 2px; border-style:solid; border-color:#dadada; margin:0 8px 8px 0; border-radius: 4px;  }
+.productBox .rightInfoBox .styleBox a.btn_selected{ color: #27d0ca; font-weight: bold; border-color: #27d0ca; position: relative; padding-left: 32px;}
+.productBox .rightInfoBox .styleBox a.btn_selected::before{ position: absolute;content: "\f00c"; left: 12px; top: 8px; font-family: Font Awesome\ 5 Free; }
+
+.productBox .rightInfoBox .styleBox a:hover{ border-color: #27d0ca; }
+.productBox .rightInfoBox .styleBox a.goods_none { cursor: not-allowed; opacity: .5;}
+.productBox .rightInfoBox .styleBox a.goods_none:hover{ border-color: #dadada; opacity: .5; }
+
+
+.productBox .rightInfoBox .select_quantity{ width: 100%; max-width: 200px; position: relative;}
+.productBox .rightInfoBox .select_quantity input.qty_input{ width:100%; height: 40px; line-height: 40px; border:2px solid #dadada; font-size: 17px; border-radius: 4px; text-align: center; -webkit-appearance: none; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.productBox .rightInfoBox .select_quantity input.qty_input::-webkit-outer-spin-button, .productBox .rightInfoBox .select_quantity input.qty_input::-webkit-inner-spin-button{ -webkit-appearance: none !important; margin: 0; }
+.productBox .rightInfoBox .select_quantity input.qty_input[type=number]:focus{ border-color: #cac5c5;}
+.productBox .rightInfoBox .select_quantity input.qty_input[type="number"]{-moz-appearance:textfield;}
+
+.productBox .rightInfoBox .select_quantity span{ color: #6d6d6d; position: absolute; width: 40px; background-color: #fff; z-index: 10; height: 39px; font-size: 12px; line-height: 39px; text-align: center; cursor: pointer;}
+.productBox .rightInfoBox .select_quantity span.plus{top: 2px; right: -2px; border-left: 1px solid #dedede; border-radius: 0 4px 4px 0;}
+.productBox .rightInfoBox .select_quantity span.minus{ top: 2px; left: 2px; border-right: 1px solid #dedede; border-radius: 4px 0 0 4px}
+.productBox .rightInfoBox .select_quantity span.plus:hover, .productBox .rightInfoBox .select_quantity span.minus:hover{background-color: #dedede;}
+.productBox .rightInfoBox .select_quantity span.minus_none{ cursor: not-allowed; color: #dadada;}
+.productBox .rightInfoBox .select_quantity span.minus_none:hover{ background-color: inherit; }
+
+.productBox .rightInfoBox .btnBox{ width: 100%; text-align: left; padding: 25px 0; }
+.productBox .rightInfoBox .btnBox a{cursor: pointer;}
+.productBox .rightInfoBox .btnBox a.btn{ font-size: 16px; cursor: pointer; margin-bottom: 5px; display: inline-block; color: #fff; width: 100%; max-width: 150px; margin-right: 10px; height: 42px; line-height: 42px; border-radius: 4px; background-color: #F94F4F; text-align: center;  }
+.productBox .rightInfoBox .btnBox a.btn:hover{background-color: #e44f4f;}
+.productBox .rightInfoBox .btnBox a.btn_none{background-color:#dadada;  cursor: not-allowed;}
+.productBox .rightInfoBox .btnBox a.btn_none:hover{background-color: #dadada;}
+.productBox .rightInfoBox .btnBox a.gobuy{background-color: #ffad39;}
+.productBox .rightInfoBox .btnBox a.gobuy:hover{background-color: #eaa036;}
+.productBox .rightInfoBox .btnBox a.car{ color: #555; position: relative;}
+/*.productBox .rightInfoBox .btnBox a.car::before{ color: #555;  position: absolute; top: 0; left: 0; content: "\f07a"; font-family: Font Awesome\ 5 Free; font-weight: 900; display: inline-block;}
+*/.productBox .rightInfoBox .btnBox a.car:hover{ color: #333; }
+.productBox .rightInfoBox .btnBox span.nb{ position: absolute; top:-6px; right:-20px; display: inline-block;  font-size: 12px; font-weight: 700; line-height: 1;  color:#fff; text-align: center; white-space: nowrap; vertical-align: baseline; background-color:#ffad39; padding: 3px 6px; border-radius: 10px;}
+
+.productBox p.for_note{ color: #F94F4F; font-weight: bold; padding-bottom: 15px; position: relative; }
+.productBox p.for_note i{ padding-right: 5px; }
+
+/*footer*/
+.shopping_FooterBox{ width: 100%; background-color: #fff; padding: 30px 0;}
+.shopping_FooterBox .navbar{width: 100%; display: flex; justify-content: center;}
+.shopping_FooterBox .navbar p{font-size: 14px; font-weight: bold; line-height: 22px; color: #666;}
+.shopping_FooterBox h4.logo{ text-align: center; height: 22px; margin-left: 5px; }
+.shopping_FooterBox .copyright{ width: 100%; padding-top: 5px;}
+.shopping_FooterBox .copyright p{font-size: 12px; text-align: center; color: #a1a1a1; line-height: 26px; }
+
+/*member centre 按鈕 default*/
+.btn_default{ width: 100%; text-align: center; line-height: 22px; }
+.btn_default a{background-color: #27d0ca;  cursor: pointer; border-radius: 4px; display: inline-block; min-width: 124px; min-height: 22px; line-height: 22px; color: #fff; padding: 10px 15px; transition: all 0.2s linear;}
+.btn_default a:hover{opacity: .9;}
+.btn_default a.color_gray{  background-color: #b1b1b1; margin-left: 10px;}
+.btn_default a.btn_none{background-color:#dadada;  cursor: not-allowed;}
+.btn_default a.btn_none:hover{background-color: #dadada;}
+
+/*member centre 按鈕 default EDN*/
+.main_contents ul.pageBox{width: 100%; /*text-align: center;*/ padding: 20px 0;}
+.main_contents ul.pageBox li{display: inline-block; margin: 0 3px;}
+.main_contents ul.pageBox li p{font-size: 14px; color: #666;}
+.main_contents ul.pageBox li p a{ padding:8px 14px; color: #666; display: inline-block;}
+.main_contents ul.pageBox li p a:hover{color: #27d0ca;}
+.main_contents ul.pageBox li p a.btn_in{ color: #27d0ca; font-weight: bold; /*border-bottom: 1px solid #27d0ca; */}
+.main_contents ul.pageBox li p a.border{border: 1px solid #c9c9c9; font-size: 13px;}
+.main_contents ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
+
+ul.shopping_car_list{padding-bottom: 25px;}
+ul.shopping_car_list .sbox{ float: left; width: 20%; padding: 10px 0; min-height: 78px;  border-bottom: 1px solid #f5f5f5;text-align: center;  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center}
+ul.shopping_car_list .top_title .sbox{ min-height: inherit; background-color: #f5f5f5; border-top: 1px solid #e4e4e4;}
+ul.shopping_car_list .car_name{width: 40%;}
+ul.shopping_car_list .car_name p.product_name{ text-align:left; float: left; padding: 5px; max-width: calc(100% - 90px);}
+ul.shopping_car_list .car_name p.product_name span.mainTitle{ font-weight: bold; display: block; }
+ul.shopping_car_list .car_name p.product_name span.style_for{color: #666; padding: 5px 0;}
+ul.shopping_car_list .car_name p.product_name span.money{ display: block; }
+ul.shopping_car_list .car_name .Photo{ max-width: 70px; float: left; padding-right: 8px; }
+ul.shopping_car_list .car_name a{display: block ; width: 95%; margin: 0 auto;}
+ul.shopping_car_list .car_delete{ position: relative; }
+ul.shopping_car_list .car_delete a{ color: #666; cursor: pointer;}
+ul.shopping_car_list .car_delete a.yesDelets{position: absolute; background-color: #F94F4F; padding: 15px ; left: 50%; margin-left:-45px; top: 0px\9; *top:0px; _top:0px;  }
+ul.shopping_car_list .car_delete a.yesDelets p{ color: #fff;}
+ul.shopping_car_list .car_delete a:hover{ color: #27d0ca; }
+@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+	ul.shopping_car_list .car_delete a.yesDelets{ top:0px;}
+}
+.shoppingcar_icon{ position: fixed; bottom: 8%; right: 3%;}
+.shoppingcar_icon .btn_car{ cursor: pointer; position: relative; width: 55px; color: #fff; line-height: 55px; text-align: center; height: 55px; display: block; border-radius: 50%; background-color: #46d7d1;}
+.shoppingcar_icon .btn_car span.nb{ position: absolute; top:0px; right:0px; display: inline-block;  font-size: 12px; font-weight: 700; line-height: 1;  color:#fff; text-align: center; white-space: nowrap; vertical-align: baseline; background-color:#ffad39; padding: 3px 6px; border-radius: 10px;}
+
+/*popup */
+.setBox{ width: 100% }
+.setBox .top_title{ width: 100%; position: relative; text-align: center; padding: 15px 0;}
+.setBox .top_title::after{position: absolute; content: ""; width: 70px; left: 50%; bottom: 0; margin-left: -35px; height: 2px; background-color: #27d0ca; display: block;}
+.setBox .top_title h3{ font-size: 24px; padding-bottom: 10px;color: #333; }
+.setBox .top_title p{color: #888; line-height: 20px;}
+.setBox .none_line{margin: 0;}
+.setBox .none_line::after{ display: none; }
+
+.setBox .fillinBox{ width: 100%; }
+.setBox .fillinBox ul li{padding-bottom: 10px;}
+.setBox .fillinBox ul li a.store_pickup{padding: 0 10px; font-size: 13px; color: #27d0ca; text-decoration: underline; cursor: pointer;}
+
+.setBox .fillinBox ul li a.store_pickup:hover{text-decoration: none;}
+.setBox .fillinBox p.label_title{padding: 12px 0; color: #888888;}
+.setBox .fillinBox .f_red{ color: #ff2121; }
+
+.setBox .fillinBox input, .setBox .fillinBox textarea{border: 1px solid #e0e0e0; width:calc(100% - 22px); padding: 8px 10px; font-size: 15px; line-height: 24px; color: #333;}
+.setBox p.the_reminder{ color: #888888; font-size: 13px;text-align: justify; line-height: 22px; padding: 6px 0; }
+.setBox p.the_reminder a{ color: #27d0ca; }
+.setBox p.the_reminder a:hover{text-decoration: underline;}
+
+.setBox .fillinBox input[type=text], .setBox .fillinBox textarea { -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  outline: none;}
+.setBox .fillinBox input[type=text]:focus, .setBox .fillinBox textarea:focus { border-color: #9e9e9e;}
+
+.setBox .fillinBox .less140{ width: calc(100% - 122px); float: left;}
+.setBox .fillinBox .btn_default{width: inherit; display: inline-block;}
+.setBox .fillinBox .verification .btn_default a{ min-width: 90px; padding: 10px 5px;}
+.setBox .fillinBox ul.shop_info_set{ padding-bottom: 20px; }
+
+.setBox .styled-select { border: 1px solid #e0e0e0; width:calc(100% - 2px) ; min-height: 22px; -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out; overflow: hidden; background: url(../images/icon_arr.png) right center no-repeat #fff;}
+.setBox .styled-select select { width:100%; width: calc(100% - 20px); padding: 8px 10px; min-height: 24px; line-height: 24px; *width:120%; _width:120%;  background:transparent; text-align: center;  font-size: 15px; border: 0; border-radius:0; -webkit-appearance: none;  }
+.setBox .styled-select select option{ background-color:#fff; text-align: center; color: #333;}
+.setBox .styled-select:hover{ border-color: #9e9e9e; }
+.setBox .styled-select option.gray{ color: #888888;}
+
+
+.setBox .fillinBox .storePhoto{padding-bottom: 20px;}
+.setBox .fillinBox .storePhoto .the_img{ width: 250px; height: 108px; text-align: center; background-color: #fff; }
+.setBox .fillinBox .storePhoto p.the_reminder{ width: calc(100% - 282px);}
+.setBox .fillinBox .storePhoto p.the_reminder a{margin-right: 10px;}
+
+.setBox .select_quantity{ width: 100%; width: 90px; position: relative; margin: 0 auto;}
+.setBox .select_quantity input.qty_input{ width:100%; height: 28px; line-height: 28px; border:1px solid #dadada; padding: 0; font-size: 14px; border-radius: 4px; text-align: center; -webkit-appearance: none; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.setBox .select_quantity input.qty_input::-webkit-outer-spin-button, .setBox .select_quantity input.qty_input::-webkit-inner-spin-button{ -webkit-appearance: none !important; margin: 0; }
+.setBox .select_quantity input.qty_input[type=number]:focus{ border-color: #cac5c5;}
+.setBox .select_quantity input.qty_input[type="number"]{-moz-appearance:textfield;}
+
+.setBox .select_quantity span{ color: #6d6d6d; position: absolute; width: 25px; height: 28px; font-size: 10px; line-height: 28px; text-align: center; cursor: pointer;}
+.setBox .select_quantity span.plus{top: 1px; right: -1px; border-left: 1px solid #dedede; border-radius: 0 4px 4px 0;}
+.setBox .select_quantity span.minus{ top: 1px; left: 1px; border-right: 1px solid #dedede; border-radius: 4px 0 0 4px}
+.setBox .select_quantity span.plus:hover, .setBox .select_quantity span.minus:hover{background-color: #dedede;}
+.setBox .select_quantity span.minus_none{ cursor: not-allowed; color: #dadada;}
+.setBox .select_quantity span.minus_none:hover{ background-color: inherit; }
+
+
+.setBox .confirm{ width: 100%; max-width: 335px; margin: 0 auto; padding-bottom: 40px;}
+.setBox .confirm .the_radio{ width: 15px; height: 21px; float: left; margin-right: 8px; }
+.setBox .confirm label{  width: inherit; }
+.setBox .confirm p{float: left; line-height: 20px; width: calc(100% - 23px); font-size: 14px;}
+.setBox .confirm p a{ color: #27d0ca; text-decoration: underline; margin: 0 3px;}
+.setBox .confirm p a:hover{text-decoration: none;}
+
+
+.setBox .for_note{ width:100%; text-align: center; display: inline-block; padding: 12px; font-size: 14px; color: #F94F4F; font-weight: bold; line-height: 24px; }
+.setBox .for_note i{padding-right: 5px;}
+.setBox .color_red{color: #ff2121;}
+
+/*Order Done*/
+.orderDoneBox{padding: 50px 0; width: 100%; max-width: 650px; margin: 0 auto;}
+.orderDoneBox h4{font-size: 18px; font-weight: bold; text-align: center; padding-bottom: 15px;}
+.orderDoneBox p.subtitle{padding-bottom: 15px; text-align: center; line-height: 24px; max-width: 540px; margin: 0 auto; font-weight: bold; color: #666;}
+.orderDoneBox p span{ color: #27d0ca; }
+.orderDoneBox ul.order_info{ width: 100%; padding: 15px 0;}
+.orderDoneBox ul.order_info li{padding: 5px 0;}
+.orderDoneBox ul.order_info li p{padding: 5px 0;}
+.orderDoneBox ul.order_info li .leftTitle{float: left; width: 110px;}
+.orderDoneBox ul.order_info li .info{float: left; width:calc(100% - 120px); }
+.orderDoneBox ul.order_info li ul.buy_list{float: left; width:calc(100% - 120px); }
+.orderDoneBox ul.order_info li ul.buy_list li{ border-bottom: 1px dashed #dadada;}
+.orderDoneBox ul.sendBox{ border:1px solid #b9edeb; border-width: 1px 0 1px 0; margin-bottom: 40px;}
+
+
+/*popup - style*/
+.white-popup { position: relative; background: #FFF; padding: 30px 60px 50px 60px; width: auto; max-width: 640px; margin: 20px auto;}
+.mfp-fade.mfp-bg {  opacity: 0; -webkit-transition: all 0.15s ease-out; -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
+.mfp-fade.mfp-bg.mfp-ready { opacity: 0.5;}
+.mfp-fade.mfp-bg.mfp-removing { opacity: 0;}
+.mfp-fade.mfp-wrap .mfp-content { opacity: 0; -webkit-transition: all 0.15s ease-out;  -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content { opacity: 1;}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content { opacity: 0;}
+
+.popup-w-s{max-width: 360px;}
+.popup-w-s .setBox .top_title::after{ display: none;}
+.width-M {max-width: 1000px;}
+
+.setBox .the_one{float: left; position: relative; max-width: 200px; width: calc(100% - 130px); border: 1px solid #e0e0e0; display: block; }
+.setBox .the_one select{ width: 100%;height: 40px; padding: 8px 32px 8px 8px; font-size: 15px; line-height: 24px;  color: #333;
+	-webkit-appearance: none;/* Chrome */
+	-moz-appearance: none;/* Firefox */
+	text-indent: 0.01px;
+	text-overflow: ' '; /* space */
+}
+.setBox .the_one select::-ms-expand{  display: none;}/*IE 10 */
+.setBox .w_en{max-width: 265px;}
+.setBox .form-select::after{ content: "\f107"; position: absolute; top: 12px;  color: #555; right: 15px; display: inline-block; font-family:  Font Awesome\ 5 Free; font-size: inherit; text-rendering: auto; font-weight: 900; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+.setBox .order_editBox .the_area{ float: left; width: 100%; width: calc(100% - 102px); /*max-width: 125px;*/}
+.setBox .order_editBox .the_area .the_one{width: 125px;}
+.setBox .order_editBox .the_area input.input_area{ width: calc(100% - 20px); max-width: 160px; margin-left: 10px;}
+.setBox .order_editBox .the_address .the_one{ margin-right: 10px;}
+.setBox .order_editBox .the_address input.input_area{ width: 100%; max-width: 60px; margin-left: 0px;}
+.setBox .order_editBox .the_address input.add{ width: calc(100% - 22px); margin-top: 10px;}
+.setBox .order_editBox .the_phone{ float: left; width: calc(100% - 102px);}
+.setBox .order_editBox .the_phone input.phone_w01{ width:50px;  margin-right: 10px; }
+.setBox .order_editBox .the_phone input.phone_w02{ width: 100px; }
+.setBox .order_editBox input.font-s::placeholder{ font-size: 11px; }
+.setBox .order_editBox input.font-s::-webkit-input-placeholder { font-size: 11px; }
+.setBox .order_editBox input.font-s::-moz-placeholder { font-size: 11px; }
+.setBox .order_editBox input.font-s:-ms-input-placeholder { font-size: 11px; }
+.setBox .order_editBox input.font-s:-moz-placeholder { font-size: 11px; }
+
+.setBox .order_editBox label{width: 100px; float: left;}
+.setBox .order_editBox label.no_w{width: inherit;}
+.setBox .order_editBox input{ width:calc(100% - 124px); float: left; }
+
+.setBox .order_editBox h4{font-weight: bold; color: #27d0ca; padding: 15px 0;}
+.setBox .order_editBox p.info_show{ float: left; color: #333; /*width:calc(100% - 110px);*/ padding: 8px 0px; font-size: 15px; line-height: 24px; min-height: 24px;}
+.setBox .order_editBox p.label_title{font-size: 13px;}
+.setBox .order_editBox .purchaseDetails{font-size: 14px; border-top: 1px solid #e0e0e0;}
+.setBox .order_editBox .purchaseDetails td, .setBox .order_editBox .purchaseDetails th{ padding: 15px 0; vertical-align: middle; white-space: nowrap;}
+.setBox .order_editBox .purchaseDetails a{display: block; color: #666;}
+.setBox .order_editBox .purchaseDetails a:hover{ color: #27d0ca; }
+.setBox .order_editBox .purchaseDetails th{ color: #666; background-color: #f9f9f9; font-weight: normal; font-size: 13px; }
+.setBox .order_editBox .purchaseDetails .total_amount{ background-color: #e2ecec; font-size: 18px; font-weight: bold;}
+.setBox .order_editBox .purchaseDetails .total_amount span{ color: #F94F4F; }
+.setBox .order_editBox .purchaseDetails .name{max-width: 100px; white-space: pre-wrap; padding-right: 10px; text-align: justify;}
+/*popup - style end*/
+
+
+.shopping_contents ul.pageBox{width: 100%; text-align: center; padding-bottom:40px;}
+.shopping_contents ul.pageBox li{display: inline-block; margin: 0 3px;}
+.shopping_contents ul.pageBox li p{font-size: 14px; color: #666;}
+.shopping_contents ul.pageBox li p a{ padding:8px 14px; color: #666; display: inline-block;}
+.shopping_contents ul.pageBox li p a:hover{color: #27d0ca;}
+.shopping_contents ul.pageBox li p a.btn_in{ color: #27d0ca; font-weight: bold; /*border-bottom: 1px solid #27d0ca; */}
+.shopping_contents ul.pageBox li p a.border{border: 1px solid #c9c9c9; font-size: 13px;}
+.shopping_contents ul.pageBox li p a.border:hover{border-color: #c9c9c9;}
+
+
+/*==== RWD ====*/
+@media (max-width:1100px){
+	.ContentsBox{ width: 90%; margin: 0 auto; }
+	.shopping_contents ul.product_list li{ width: calc( 33.33% - 36px); padding: 18px;}
+}
+
+@media (max-width:760px){
+	.HeaderBox{ position: fixed; top: 0; padding: 0;}
+	.HeaderBox ul.menu{ display: none; }
+	.shopping_contents{padding-top: 50px;min-height: calc( 100vh - 168px);}
+	.shopping_contents ul.product_list{padding:20px 0; }
+	.shopping_contents ul.product_list li{ width: calc( 50% - 20px); padding: 18px 10px;}
+	.HeaderBox h1.logo{height: 50px; padding: 8px 0;}
+	.HeaderBox h1.logo a{height: 50px;}
+	.notesBox h4, .serviceBox h4{display: block;}
+	.white-popup{padding: 30px 20px 50px 20px;}
+}
+@media (max-width:770px){
+	.productBox .rightInfoBox .btnBox a.btn{max-width: 135px;}
+}
+
+@media (max-width:750px){
+	.productBox{padding: 30px 0;}
+	.productBox .photoBox{float: none; padding-right: 0; margin: 0 auto;}
+	.productBox .rightInfoBox{ max-width: 92%; margin: 0 auto; padding-top: 15px; float: none; }
+	.productBox .rightInfoBox h3.product_title, .productBox .rightInfoBox h3.product_price{text-align: center;}
+	.productBox .rightInfoBox p.product_description{text-align: center; border-bottom: 1px solid #efefef; padding-bottom: 15px; margin-bottom: 10px;}
+	.pad_bt{padding-bottom: 70px}
+	.productBox .rightInfoBox .btnBox{ position: fixed; bottom: 0; left: 0; background-color: #fff; padding: 0;  z-index: 10;}
+	.productBox .rightInfoBox .btnBox a{ float: left;  }
+	.productBox .rightInfoBox .btnBox a.btn{margin: 0; height: 45px; line-height: 45px; border-radius: 0; max-width: calc(50% - 25px);}
+	.productBox .rightInfoBox .btnBox a.car{width: 50px; line-height: 45px; background-color: #787878; color: #fff; text-align: center;}
+	.productBox .rightInfoBox .btnBox span.nb{ top: -3px; right: 3px; }
+}
+@media (max-width:650px){
+	ul.shopping_car_list li.top_title{display: none;}
+	ul.shopping_car_list .sbox{width: 33.3%; padding: 0;}
+	ul.shopping_car_list .car_name{width: 100%; border:none;}
+	.orderDoneBox{max-width:94%;}
+	.orderDoneBox p{ font-size: 14px; }
+	.orderDoneBox p.subtitle{line-height: 22px;}
+	.shopping_contents ul.pageBox li p{ font-size: 13px; }
+	.shopping_contents ul.pageBox li p a{padding: 8px 10px;}
+}
+@media (max-width:600px){
+	.setBox .confirm p{font-size: 13px;}
+	.notesBox h4, .serviceBox h4{font-size: 18px;}
+	.setBox .the_one{width: calc(100% - 104px); max-width: inherit;}
+	/*.HeaderBox ul.menu{display: none;}*/
+}
+@media (max-width:499px){
+	.setBox .order_editBox .the_area input.input_area{ float: none; max-width: 200px; margin-left: 0; margin-top: 10px; }
+	.setBox .order_editBox .the_address .the_one{ margin:0 0 10px 0; width:calc(100% - 2px);}
+	.setBox .order_editBox .the_address input.input_area{ max-width: 105px; margin-top: 0;}
+	.shoppingcar_icon .btn_car{width: 50px; height: 50px; line-height: 50px;}
+	.shopping_contents ul.pageBox li p a{ padding: 8px 6px;}
+
+}
+@media (max-width:420px){
+	.btn_default a{padding: 10px 0;}
+	.HeaderBox ul.userBox li .notificationBox{ width: calc(100vw - 100px); right: -8vw;}
+	.shoppingcar_icon .btn_car{width: 45px; height: 45px; line-height: 45px;}
+	.setBox .order_editBox .the_phone input.phone_w01{ margin:0 0 10px 0 ; width: 100%; max-width: 105px;}
+	.setBox .order_editBox .the_phone input.phone_w02{ width: calc(100% - 22px);}
+}
+
+@media (max-width:320px){
+	.shopping_contents ul.pageBox li{margin: 0 0px;}
+}

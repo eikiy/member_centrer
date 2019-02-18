@@ -1,0 +1,30 @@
+html,body{width:100%;margin:0;padding:0}
+.page{width:100%;min-height:100%;overflow:auto;z-index:1;position:relative}
+.mobile-nav{ display:none;}
+.mobile-nav ul{margin:0 0 25px; padding:0px;}
+.mobile-nav ul li{list-style:none}
+.mobile-nav h3{ font-size: 16px; text-align: center; }
+.mobile-nav h3.menu{padding: 10px 0;}
+ul.submenu{ padding-top:10px;}
+
+.hamburger{ position: fixed; display: none; top:5px; right: 10px;  padding:10px 10px 9px; cursor:pointer; z-index:200;}
+.hamburger .hamburger-inner{position:relative;height:21px;width:24px;display:block;margin:0;padding:0;}
+.hamburger .bar{width:24px;height:2px;background:#46d7d1;position:absolute;top:0}
+.hamburger .bar.bar2,.hamburger .bar.bar3{top:9px; }
+.hamburger .bar.bar4{top:18px; }
+.hamburger.open .bar1,.hamburger.open .bar4{display:none}
+.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #fff;}
+
+@media (max-width:760px){.hamburger{ display:block;}}
+
+.mobile-nav{ width:260px !important; background-color:#33a790; z-index:16;}
+.mobile-nav a.accesskey{ color: #33a790; }
+.mobile-nav ul.Oneself{ width:100%; padding-top: 30px;}
+.mobile-nav ul.Oneself::after{content:""; position:absolute; left:50%; top:10px; width:40px; height:54px; display: block; background: url(../images/icon_mushrooms.png) center top no-repeat; background-size: contain; margin-left:-20px; z-index: 6;}
+.mobile-nav ul.Oneself li p.subMenu{ font-size: 14px; padding: 10px 0; border-bottom: 1px #7bc4b6 dashed;}
+.mobile-nav ul.Oneself li p.subMenu a{ width: 50%; float: left; }
+.mobile-nav ul.Oneself li.no_line{ border: none;  margin-bottom: 10px;}
+.mobile-nav ul.Oneself li.noOnline h3 a{ color: #cf934c; }
+.mobile-nav ul.Oneself li h3.menu{background:url(../images/logo.png) center center no-repeat; background-size: contain; text-indent: -9999px;}
+.mobile-nav ul.Oneself li p {line-height: 45px; font-size: 17px; text-align: center;}
+.mobile-nav ul.Oneself li p a{ color: #fafafa; cursor: pointer; }
