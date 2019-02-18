@@ -13,16 +13,18 @@
 <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
 <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplePagination.js"></script>
 
-<script type="text/javascript" src="js/menu.js"></script>
+
 
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 <!-- Magnific Popup core JS file -->
-<!-- <script src="magnific-popup/jquery.magnific-popup.js"></script>
-<script type="text/javascript">
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<!-- <script type="text/javascript">
 $(document).ready(function() {
     $('.popup-link').magnificPopup({
       removalDelay: 300,
@@ -30,11 +32,22 @@ $(document).ready(function() {
     });
 });
 </script> -->
+<script type="text/javascript">
+$(function() {
+    $('selector').pagination({
+        items: 100,
+        itemsOnPage: 10,
+        cssStyle: 'light-theme'
+    });
+});
+
+
+</script>
 
 <link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/retina.min.js"></script>
 
+<script type="text/javascript" src="js/retina.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body class="page">
 <div class="mobile-nav" id="sideMenu">
@@ -66,6 +79,17 @@ $(document).ready(function() {
 
 <div class="shoppingcar_icon">
     <a class="btn_car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a>
+    <div class="btn_car btn_share">
+        <a class="go_share" title="分享">
+            <i class="fas fa-share-alt"></i>
+        </a>
+        <ul class="share_web_list"><!--  style=" opacity: 1; display: none;" -->
+            <li><a class="fb" href="#" title="分享至 Facebook"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a class="twitter" href="#" title="分享至 Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="google" href="#" title="分享至 Google+"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a class="line" href="#" title="分享至 Line"><i class="fab fa-line"></i></i></a></li>
+        </ul>
+    </div>
 </div>
 
 <main class="shopping_contents">
@@ -125,18 +149,32 @@ $(document).ready(function() {
                 </div>
                 </a>
             </li>
-        </ul>
-        <ul class="pageBox"> <!-- 最多6個? 就出現頁籤 -->
-                  <li><p><a href="#" class="border">Prev</a></p></li>
-                  <li><p><a href="#">1</a></p></li>
-                  <li><p><a class="btn_in" href="#">2</a></p></li>
-                  <li><p><a href="#">3</a></p></li>
-                  <li><p>...</p></li>
-                  <li><p><a href="#">15</a></p></li>
-                  <li><p><a href="#">16</a></p></li>
-                  <li><p><a href="#">17</a></p></li>
-                  <li><p><a href="#" class="border">Next</a></p></li>
-                </ul>
+        </ul><!-- 最多6個? 就出現頁籤 -->
+        <!-- <ul class="pageBox"> 
+            <li><a href="#" class="border">Prev</a></li>
+            <li><a href="#">1</a></p></li>
+            <li><a class="btn_in" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><p>...</p></li>
+            <li><p><a href="#">15</a></p></li>
+            <li><p><a href="#">16</a></p></li>
+            <li><p><a href="#">17</a></p></li>
+            <li><p><a href="#" class="border">Next</a></p></li>
+        </ul> -->
+        <div class="simple-pagination light-theme pageBox">
+            <ul>
+                <li class="disabled"><span class="current prev">Prev</span></li>
+                <li class="active"><span class="current">1</span></li>
+                <li><a href="#page-2" class="page-link">2</a></li>
+                <li><a href="#page-3" class="page-link">3</a></li>
+                <li><a href="#page-4" class="page-link">4</a></li>
+                <li><a href="#page-5" class="page-link">5</a></li>
+                <li class=""><span class="ellipse clickable">…</span></li>
+                <li><a href="#page-69" class="page-link">69</a></li>
+                <li><a href="#page-70" class="page-link">70</a></li>
+                <li><a href="#page-2" class="page-link next">Next</a></li>
+            </ul>
+        </div>
     </div>
 </main>
 

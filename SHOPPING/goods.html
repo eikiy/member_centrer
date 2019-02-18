@@ -8,7 +8,7 @@
 <meta name="MobileOptimized" content="width">
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<!-- <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> -->
 <!-- <link rel="stylesheet" href="on-server/css/fontawesome-all.css"> -->
 <!-- <script type="text/javascript" src="on-server/js/fontawesome-all.css.js"></script> -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -58,7 +58,7 @@ $(document).ready(function() {
         <!-- <h1 class="logo"><a href="index.html"><img src="images/logo_test_03.jpg" height="100%" alt="LOGO"></a></h1> --> <!-- 有上傳logo的狀態 -->
         <h1><a href="index.html">流行時尚。CITY</a></h1> <!-- 純文字的狀態 -->
         <ul class="menu">
-            <li><p class="btn_in"><a href="index.html">首頁</a></p></li>
+            <li><p><a href="index.html">首頁</a></p></li>
             <li><p><a href="notes.html">退換貨及退款須知</a></p></li>
             <li><p><a href="transport.html">運送服務</a></p></li>
             <li><p><a href="terms.html">其他條款</a></p></li>
@@ -66,62 +66,132 @@ $(document).ready(function() {
         </ul>
     </nav>
 </header>
+
+<div class="shoppingcar_icon">
+    <a class="btn_car btn_go_up" href="#" title="TOP"><i class="fas fa-arrow-up"></i></a>
+    <!-- <a class="btn_car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a> -->
+    <div class="btn_car btn_share">
+        <a class="go_share" title="分享">
+            <i class="fas fa-share-alt"></i>
+        </a>
+        <ul class="share_web_list"><!--  style=" opacity: 1; display: none;" -->
+            <li><a class="fb" href="#" title="分享至 Facebook"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a class="twitter" href="#" title="分享至 Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="google" href="#" title="分享至 Google+"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a class="line" href="#" title="分享至 Line"><i class="fab fa-line"></i></i></a></li>
+        </ul>
+    </div>
+
+</div>
+
 <main class="shopping_contents">
-    <div class="ContentsBox">
-        <div class="productBox clearfix">
-            <div class="photoBox">
-                <div class="mainPhoto">
-                    <a href="#"><img src="images/fashion_ciothes_05.jpg" width="100%" alt=""></a>
-                </div>
-            </div>
-            <div class="rightInfoBox">
-                <h3 class="product_title">時尚造型外套</h3>
-                <h3 class="product_price">NT$1099</h3>
-                <p class="product_description">今年吹起一股長大衣風潮， 所以衣櫥免不了一件實搭又大方的長大衣外套</p>
-                <p class="ex">請選擇樣式</p>
-                <div class="styleBox"><!-- I、選完這列才會出現下面那一列 -->
-                    <a href="#">玫瑰紅</a>
-                    <a class="btn_selected" href="#">派對黑</a>
-                    <a href="#">時尚粉</a>
-                    <a href="#">深邃藍</a>
-                </div>
-                <div class="styleBox"><!-- II、 如果此商品沒有第二列樣式就不會出現 -->
-                    <a class="btn_selected">L</a>
-                    <a class="goods_none" disabled>S (售完)</a>
-                </div>
-                <!-- 沒有選擇樣式就按按鈕會跳提醒語 -->
-                <p class="for_note"><i class="fas fa-exclamation-circle"></i>請選擇樣式</p>
-                <table class="product_info" width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <th class="top_title">商品供應</th>
-                        <td>預購</td>
-                    </tr>
-                    <tr>
-                        <th class="top_title">商品須知</th>
-                        <td>預購品追加期：7-20個工作天(不含例假日)</td>
-                    </tr>
-                </table>
-                <p class="ex">請選擇商品數量</p>
-                <div class="select_quantity" data-radium="true">
-                    <input type="number" class="qty_input" value="1">
-                    <div class="qty-adjust" data-radium="true">
-                        <span class="plus"><i class="fa fa-plus"></i></span>
-                        <span class="minus minus_none" disabled><i class="fa fa-minus"></i></span>
+    <section class="top_infoBox">
+        <div class="ContentsBox">
+            <div class="productBox clearfix">
+                <div class="photoBox">
+                    <div class="mainPhoto">
+                        <a href="#"><img src="images/fashion_ciothes_05.jpg" width="100%" alt=""></a>
                     </div>
                 </div>
-                <div class="btnBox clearfix">
-                    <a class="btn btn_none" disabled>直接購買</a>
-                    <a class="btn btn_none" disabled>加到購物車</a>
-                    <a class="car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a>
-                </div>
-                <div class="btnBox clearfix">
-                    <a class="btn gobuy popup-link" href="#popup1">直接購買</a>
-                    <a class="btn popup-link" href="#popup2">加到購物車</a>
-                    <a class="car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a>
+                <div class="rightInfoBox">
+                    <h3 class="product_title">【現貨】最新韓國最流行款 | 時尚簡約長大衣(紅色) 用搶眼色吸引他人目光 群眾追隨的力量</h3>
+                    <h3 class="product_price">NT$1099</h3>
+                    <p class="ex">請選擇樣式</p>
+                    <div class="styleBox"><!-- I、選完這列才會出現下面那一列 -->
+                        <a href="#">玫瑰紅</a>
+                        <a class="btn_selected" href="#">派對黑</a>
+                        <a href="#">時尚粉</a>
+                        <a href="#">深邃藍</a>
+                        <a href="#">俐落白</a>
+                        <a href="#">低調灰</a>
+                        <a href="#">沉穩墨綠</a>
+                        <a href="#">珊瑚橘</a>
+                    </div>
+                    <div class="styleBox"><!-- II、 如果此商品沒有第二列樣式就不會出現 -->
+                        <a class="btn_selected">L</a>
+                        <a class="goods_none" disabled>S (售完)</a>
+                    </div>
+                    <!-- 沒有選擇樣式就按按鈕會跳提醒語 -->
+                    <p class="for_note"><i class="fas fa-exclamation-circle"></i>請選擇樣式</p>
+                    <table class="product_info" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th class="top_title">商品供應</th>
+                            <td>預購</td>
+                        </tr>
+                        <tr>
+                            <th class="top_title">交期說明</th>
+                            <td>預購品追加期：7-20個工作天(不含例假日)</td>
+                        </tr>
+                        <tr>
+                            <th class="top_title">商品狀況</th>
+                            <td>新品</td>
+                        </tr>
+                    </table>
+                    <p class="ex">請選擇商品數量</p>
+                    <div class="select_quantity" data-radium="true">
+                        <input type="number" class="qty_input" value="1">
+                        <div class="qty-adjust" data-radium="true">
+                            <span class="plus"><i class="fa fa-plus"></i></span>
+                            <span class="minus minus_none" disabled><i class="fa fa-minus"></i></span>
+                        </div>
+                    </div>
+                    <!-- <div class="btnBox clearfix">
+                        <a class="btn btn_none" disabled>直接購買</a>
+                        <a class="btn btn_none" disabled>加到購物車</a>
+                        <a class="car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a>
+                    </div> -->
+                    <div class="btnBox clearfix">
+                        <a class="btn gobuy popup-link" href="#popup1">直接購買</a>
+                        <a class="btn popup-link" href="#popup2">加到購物車</a>
+                        <a class="car popup-link" href="#popup" title="開啟購物車列表"><i class="fas fa-shopping-cart"></i><span class="nb">1</span></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="product_description">
+        <div class="ContentsBox">
+            <div class="description">
+                <!-- 有填寫才出現 -->
+                <p class="p_info">★精緻搶眼的隨身單品
+★ 🔶🔶可掛在大包包上做為時髦配件
+★ 送禮或是自用兩相宜🔥
+
+01.COACH 焦糖色時尚女孩圖樣PVC鑰匙圈
+COACH SIGNATURE BONNIE CASHIN   KEYCHAIN鑰匙圈，以大型COACH吊牌造型設計，正面大C PVC搭配時尚女孩圖樣呈現，背面以皮革搭配LOGO烙印妝點。
+◆商品尺寸：寬約4.5cm，高16.5cm(含金屬勾環)。 
+◆主要材質：PVC/皮革
+
+02.COACH 白色蝴蝶圖樣鑰匙圈
+COACH BUTTERFLY DOT PRINT CASHIN   KEYCHAIN鑰匙圈，以大型COACH吊牌造型設計，正面以蝴蝶圖樣PVC搭配精緻車縫線設計，背面以皮革搭配LOGO烙印妝點。
+◆商品尺寸：寬約4.5cm，高16.5cm(含金屬勾環)。 
+◆主要材質：PVC/皮革 
+
+3./04.COACH 皮革壓紋流蘇鑰匙圈吊飾
+COACH LEATHER TASSEL BAG CHARM KEYCHAIN  FOB鑰匙圈，墜飾以皮革壓紋搭配流蘇設計，相當的細緻，精緻搶眼的絕佳小物，可掛在大包包上做為時髦配件，送禮或是自用兩相宜。
+◆商品尺寸：墜飾最寬約4cm，高16cm(含金屬勾環)。 
+◆主要顏色：03.藍色  04.莓紅色
+◆主要材質：皮革/金屬
+
+05.COACH 紅色皮革星星嘴唇可愛表情別針/吊飾
+COACH VARSITY  CLASSIC   PIN BADGE SET，別針一組三入，以星星造型、嘴唇及可愛表情設計，可單獨別在外套上當作胸章使用，亦可與皮革吊飾掛在包包上做時髦配件，吊飾可當作鑰匙圈使用。
+◆款式(功能)：吊飾/別針 
+◆商品尺寸：吊飾寬3.8cm，高19cm(含金屬鍊條)，別針最寬約3cm，最高約3cm。 
+◆主要顏色：紅/黃色 
+◆主要材質：皮革/金屬</p>
+            </div>
+            <!-- 有填寫才出現 -->
+            <div class="video_info">
+                <iframe src="https://www.youtube.com/embed/4WSoP6X7_Z8?rel=0&amp;showinfo=0&amp;start=5" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <!-- 有填寫才出現 -->
+            <ul class="product_photo">
+                <li>
+                    <img src="https://shop.r10s.com/e98/495/f695/9128/71c0/dc0f/0c75/1150e88d7cc454448913e3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
 </main>
 
 
@@ -407,7 +477,7 @@ $(document).ready(function() {
             <h4 class="logo"><a href="http://www.holkee.com/" target="_blank"><img src="images/logo.png" height="100%" alt="LOGO"></a></h4>
         </div>
         <div class="copyright clearfix">
-            <p>Copyrights © 2018 All Rights Reserved.</p>
+            <p>Copyrights © 2019 All Rights Reserved.</p>
         </div>
     </div>
 </footer>
