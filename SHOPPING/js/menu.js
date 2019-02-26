@@ -64,7 +64,7 @@ $(function() {
         else{
             moved = 0;
             $(this).find("ul.share_web_list").animate({'right': '0px', 'opacity':'0'});
-            $(this).find("ul.share_web_list").animate({'right': '-200px'});
+            $(this).find("ul.share_web_list").animate({'right': '-160px'});
         }
     });
 });

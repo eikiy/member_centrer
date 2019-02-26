@@ -193,7 +193,7 @@ ul.shopping_car_list .car_delete a:hover{ color: #27d0ca; }
 .shoppingcar_icon .btn_share{ background-color: #ffad39; margin-top: 10px; position: relative;}
 
 .shoppingcar_icon .btn_share a.go_share{position: relative; z-index: 15; display: block; background-color: #ffad39; border-radius: 50%; overflow: hidden;}
-.shoppingcar_icon .btn_share ul.share_web_list{opacity: 0; position: absolute; text-align: center; bottom: 0; min-width: 180px; right: 0px; z-index: 13;}
+.shoppingcar_icon .btn_share ul.share_web_list{opacity: 0; position: absolute; text-align: center; bottom: 0; min-width: 140px; right: 0px; z-index: 13;}
 .shoppingcar_icon .btn_share ul.share_web_list li{ display: inline-block; }
 .shoppingcar_icon .btn_share ul.share_web_list li a{ width: 40px; height: 40px; display: block; border-radius: 50%; color: #fff; line-height: 40px; text-align: center }
 .shoppingcar_icon .btn_share ul.share_web_list li a:hover{ opacity: .8; }
