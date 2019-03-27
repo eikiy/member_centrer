@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>holkee template</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <script src="https://use.fontawesome.com/ca17a34927.js"></script> -->
+<link rel="stylesheet" href="on-server/css/fontawesome-all.css">
+<script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/template.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<link rel="stylesheet" href="https://www.holkee.com/css/index.min.css">
+<link rel="stylesheet" href="https://www.holkee.com/css/member/member.css" type="text/css">
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.popup-link').magnificPopup({
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
+    });
+});
+</script>
+
+</head>
+<body>
+
+ <header class="HeaderBox">
+    <nav class="Menu ContentsBox clearfix">
+        <h1 class="logo"><a href="index.html">holkee</a></h1>
+        <!-- <ul class="menu">
+            <li><p class="btn_in"><a>會員中心</a></p></li>
+            <li><p><a href="#">免費模板</a></p></li>
+            <li><p><a href="#">最新消息</a></p></li>
+        </ul> -->
+        <ul class="userBox">
+            <li class="noticeBox"><a><p><i class="far fa-bell"></i>
+                <span class="text">通知</span>
+                <span class="bell_nb">9</span></p></a>
+                <div class="notificationBox"=>
+                    <div class="top_all_read">
+                        <p><a href="#">全部標示已讀</a></p>
+                    </div>
+                    <div class="listBox">
+                        <div class="notification-item clearfix status-unread"><!-- 未讀取狀態 -->
+                            <div class="left-box">
+                                <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
+                            </div>
+                            <div class="notification-content">
+                                <p class="title">您在【yaya & chacha baby】網站使用的行銷廣告即將到期</p><!-- 目前想到的狀態一:通知廣告要到期了 -->
+                                <p class="time">1小時前</p>
+                            </div>
+                        </div>
+                        <div class="notification-item clearfix status-unread">
+                            <div class="left-box">
+                                <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
+                            </div>
+                            <div class="notification-content">
+                                <p class="title">恭喜您已成功開通【購物網站】，請填寫更多設定以便消費者使用，點我了解更多</p><!-- 目前想到的狀態二:開通網站，但未做其它事情的提醒，或是不管有沒有做什麼都通知它XD -->
+                                <p class="time">2小時前</p>
+                            </div>
+                        </div>
+                        <div class="notification-item clearfix">
+                            <div class="left-box">
+                                <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
+                            </div>
+                            <div class="notification-content">
+                                <p class="title">【行銷@網頁】★過年瘋團購！用對工具成為消費者年節伴手禮首選！</p><!-- 目前想到的狀態三:行銷EDM 教學之類的(新增最新消息的通知) -->
+                                <p class="time">3小時前</p>
+                            </div>
+                        </div>
+                        <div class="notification-item clearfix">
+                            <div class="left-box">
+                                <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
+                            </div>
+                            <div class="notification-content">
+                                <p class="title">恭喜您成功發布網站【yaya & chacha baby】，免費申請Google商家，以便透過Google 地圖和Google 搜尋，提高您的商家在當地社群中的知名度。</p><!-- 目前想到的狀態四:push GMB，提醒user可以透過GMB曝光 -->
+                                <p class="time">1天前</p>
+                            </div>
+                        </div>
+                        <div class="notification-item clearfix">
+                            <div class="left-box">
+                                <div class="photo"><img src="images/icon-hires.jpg" width="100%" alt="holkee 官方"></div>
+                            </div>
+                            <div class="notification-content">
+                                <p class="title">恭喜您成功註冊holkee，快來獲取更多holkee點數</p><!-- 目前想到的狀態五:完成註冊，提醒user可以填寫其他設定已獲的holkee點數 -->
+                                <p class="time">1天前</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="more"><a href="#">顯示全部</a></p>
+                </div>
+            </li>
+            <li class="profile_photo">
+                <a><div class="header_profile_img"><img src="https://graph.facebook.com/1324292190919409/picture?width=40&amp;height=40" width="100%"></div>
+                <p class="userName">Eikiy Chang</p></a>
+                <div class="theUserBox">
+                    <ul>
+                        <li><p><a href="#">會員中心</a></p></li>
+                        <li class="mob_show"><p><a href="#">免費模板</a></p></li>
+                        <li><p><a href="#">免費模板</a></p></li>
+                        <li><p><a href="#">登出</a></p></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+<main class="main_contents template-contents">
+    <div class="ContentsBox clearfix">
+        <h2 class="top-title">選擇您喜歡的網站模版</h2>
+        <p class="sub-title"><span>預覽</span>：直接另開視窗觀看完整網頁；<span>套用</span>：直接進行網頁編輯。</p>
+        <ul class="template-list clearfix">
+            <li>
+                <div class="template-box">
+                    <div class="label-type"><p>NEW</p></div>
+                    <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="template-cover">
+                        <img src="images/example_cover_01.jpg" alt="">
+                    </div>
+                    <div class="tools">
+                        <div class="both-box clearfix">
+                            <div class="qrcode">
+                                <img src="images/qrcode/example_qrcode_01.png">
+                                <p>手機掃描QRcode<br>預覽網頁樣式</p>
+                            </div>
+                            <p class="btn">
+                                <a target="_blank" href="https://www.holkee.com/example-apparel">預覽</a>
+                                <a target="_blank" href="#">套用</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-info clearfix">
+                    <p class="template-name">最新服飾新品上市</p>
+                    <p class="record">1,000 瀏覽次數 / 1,999 使用人氣</p>
+                </div>
+            </li>
+            <li>
+                <div class="template-box">
+                    <div class="label-type"><p>NEW</p></div>
+                    <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="template-cover">
+                        <img src="images/example_cover_02.jpg" alt="">
+                    </div>
+                    <div class="tools">
+                        <div class="both-box clearfix">
+                            <div class="qrcode">
+                                <img src="images/qrcode/example_qrcode_02.png">
+                                <p>手機掃描QRcode<br>預覽網頁樣式</p>
+                            </div>
+                            <p class="btn">
+                                <a target="_blank" href="https://www.holkee.com/example-coffee-shop">預覽</a>
+                                <a target="_blank" href="#">套用</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-info clearfix">
+                    <p class="template-name">手工烘焙咖啡</p>
+                    <p class="record">1,000 瀏覽次數 / 1,999 使用人氣</p>
+                </div>
+            </li>
+            <li>
+                <div class="template-box">
+                    <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="template-cover">
+                        <img src="images/example_cover_03.jpg" alt="">
+                    </div>
+                    <div class="tools">
+                        <div class="both-box clearfix">
+                            <div class="qrcode">
+                                <img src="images/qrcode/example_qrcode_03.png">
+                                <p>手機掃描QRcode<br>預覽網頁樣式</p>
+                            </div>
+                            <p class="btn">
+                                <a target="_blank" href="https://www.holkee.com/example-portfolio-kt">預覽</a>
+                                <a target="_blank" href="#">套用</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-info clearfix">
+                    <p class="template-name">KT 個人網站</p>
+                    <p class="record">1,000 瀏覽次數 / 1,999 使用人氣</p>
+                </div>
+            </li>
+            <li>
+                <div class="template-box">
+                    <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="template-cover">
+                        <img src="images/example_cover_04.jpg" alt="">
+                    </div>
+                    <div class="tools">
+                        <div class="both-box clearfix">
+                            <div class="qrcode">
+                                <img src="images/qrcode/example_qrcode_04.png">
+                                <p>手機掃描QRcode<br>預覽網頁樣式</p>
+                            </div>
+                            <p class="btn">
+                                <a target="_blank" href="https://www.holkee.com/example-restaurant">預覽</a>
+                                <a target="_blank" href="#">套用</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-info clearfix">
+                    <p class="template-name">下午茶餐館</p>
+                    <p class="record">1,500 瀏覽次數 / 659 使用人氣</p>
+                </div>
+            </li>
+            <li>
+                <div class="template-box">
+                    <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="template-cover">
+                        <img src="images/example_cover_05.jpg" alt="">
+                    </div>
+                    <div class="tools">
+                        <div class="both-box clearfix">
+                            <div class="qrcode">
+                                <img src="images/qrcode/example_qrcode_05.png">
+                                <p>手機掃描QRcode<br>預覽網頁樣式</p>
+                            </div>
+                            <p class="btn">
+                                <a target="_blank" href="https://www.holkee.com/example-colorlump">預覽</a>
+                                <a target="_blank" href="#">套用</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-info clearfix">
+                    <p class="template-name">簡約色塊風 1</p>
+                    <p class="record">846 瀏覽次數 / 999 使用人氣</p>
+                </div>
+            </li>
+            <li>
+                <div class="template-box">
+                    <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="template-cover">
+                        <img src="images/example_cover_06.jpg" alt="">
+                    </div>
+                    <div class="tools">
+                        <div class="both-box clearfix">
+                            <div class="qrcode">
+                                <img src="images/qrcode/example_qrcode_06.png">
+                                <p>手機掃描QRcode<br>預覽網頁樣式</p>
+                            </div>
+                            <p class="btn">
+                                <a target="_blank" href="https://www.holkee.com/example-colorlump-2">預覽</a>
+                                <a target="_blank" href="#">套用</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-info clearfix">
+                    <p class="template-name">簡約向量風 2</p>
+                    <p class="record">750 瀏覽次數 / 89 使用人氣</p>
+                </div>
+            </li>
+            <li>
+                <div class="template-box">
+                    <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="template-cover">
+                        <img src="images/example_cover_06.jpg" alt="">
+                    </div>
+                    <div class="tools">
+                        <div class="both-box clearfix">
+                            <div class="qrcode">
+                                <img src="images/qrcode/example_qrcode_06.png">
+                                <p>手機掃描QRcode<br>預覽網頁樣式</p>
+                            </div>
+                            <p class="btn">
+                                <a target="_blank" href="https://www.holkee.com/example-colorlump-2">預覽</a>
+                                <a target="_blank" href="#">套用</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-info clearfix">
+                    <p class="template-name">簡約向量風 3</p>
+                    <p class="record">750 瀏覽次數 / 89 使用人氣</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+
+
+
+<footer class="footer-box">
+    <div class="contents-box clearfix">
+        <div class="otherbox">
+            <p class="other-link">
+                <a href="https://www.holkee.com/terms" target="_blank">會員條款</a>
+                <a href="https://www.holkee.com/privacy" target="_blank">隱私權條款</a>
+                <a href="https://www.holkee.com/qa" target="_blank">教學&QA</a>
+            </p>
+            <ul class="follow-us">
+                <li><a href="https://line.me/R/ti/p/%40bca1493j" target="_blank"><i class="fab fa-line"></i></a></li>
+                <li><a href="https://www.facebook.com/holkeego/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.holkee.com/wechat_qrcode.html" target="_blank"><i class="fab fa-weixin" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>客服信箱：<a href="mailto:service@holkee.com" target="_blank">service@holkee.com</a><br>
+            <span>（客服時間為周一至周五 9:00-18:00）</span></p>
+        </div>
+        <div class="l-Box">
+            <p class="logo">Weblisher Group</p>
+            <p class="copyright">Copyrights Ⓒ 2019 All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
