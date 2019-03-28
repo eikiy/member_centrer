@@ -49,7 +49,9 @@
 @media (max-width:750px){
 	.template-contents ul.template-list li{ width: 100%; }
 }
-
+@media (max-width:400px){
+	.template-contents ul.template-list li{ padding:15px 0;}
+}
 @media (max-device-width:1000px) {
 	.template-contents ul.template-list li .template-box .qrcode{display: none;}
 	.template-contents ul.template-list li .template-box .both-box{ padding: 0; }
