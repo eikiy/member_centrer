@@ -9,9 +9,7 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- <script src="https://use.fontawesome.com/ca17a34927.js"></script> -->
-<link rel="stylesheet" href="on-server/css/fontawesome-all.css">
-<script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/template.css">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
@@ -109,7 +107,7 @@ $(document).ready(function() {
                 <div class="theUserBox">
                     <ul>
                         <li><p><a href="#">會員中心</a></p></li>
-                        <li class="mob_show"><p><a href="#">模板專區</a></p></li>
+                        <li><p><a href="#">模板專區</a></p></li><!--  class="mob_show" -->
                         <li><p><a href="#">登出</a></p></li>
                     </ul>
                 </div>
@@ -118,9 +116,17 @@ $(document).ready(function() {
 
     </nav>
 </header>
-<main class="main_contents template-contents">
+<main class="template-contents">
     <div class="ContentsBox clearfix">
         <h2 class="top-title">選擇您喜歡的網站模版</h2>
+        <ul class="template-tag"><!-- 如果未來有tag的話，初期會是長這樣(因為template量不多) -->
+            <li><p><a class="selected" href="#">全部</a></p></li>
+            <li><p><a href="#">作品集</a></p></li>
+            <li><p><a href="#">個人</a></p></li>
+            <li><p><a href="#">商業</a></p></li>
+            <li><p><a href="#">設計</a></p></li>
+            <li><p><a href="#">活動</a></p></li>
+        </ul>
         <p class="sub-title"><span>預覽</span>：直接另開視窗觀看完整網頁；<span>套用</span>：直接進行網頁編輯。</p>
         <ul class="template-list clearfix">
             <li>
@@ -128,12 +134,12 @@ $(document).ready(function() {
                     <div class="label-type"><p>NEW</p></div>
                     <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
                     <div class="template-cover">
-                        <img src="images/example_cover_01.jpg" alt="">
+                        <img src="images/cover/cover_01.jpg" alt="">
                     </div>
                     <div class="tools">
                         <div class="both-box clearfix">
                             <div class="qrcode">
-                                <img src="images/qrcode/example_qrcode_01.png">
+                                <img src="images/qrcode/qrcode_01.png">
                                 <p>手機掃描QRcode<br>預覽網頁樣式</p>
                             </div>
                             <p class="btn">
@@ -153,12 +159,12 @@ $(document).ready(function() {
                     <div class="label-type"><p>NEW</p></div>
                     <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
                     <div class="template-cover">
-                        <img src="images/example_cover_02.jpg" alt="">
+                        <img src="images/cover/cover_02.jpg" alt="">
                     </div>
                     <div class="tools">
                         <div class="both-box clearfix">
                             <div class="qrcode">
-                                <img src="images/qrcode/example_qrcode_02.png">
+                                <img src="images/qrcode/qrcode_02.png">
                                 <p>手機掃描QRcode<br>預覽網頁樣式</p>
                             </div>
                             <p class="btn">
@@ -177,12 +183,12 @@ $(document).ready(function() {
                 <div class="template-box">
                     <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
                     <div class="template-cover">
-                        <img src="images/example_cover_03.jpg" alt="">
+                        <img src="images/cover/cover_03.jpg" alt="">
                     </div>
                     <div class="tools">
                         <div class="both-box clearfix">
                             <div class="qrcode">
-                                <img src="images/qrcode/example_qrcode_03.png">
+                                <img src="images/qrcode/qrcode_03.png">
                                 <p>手機掃描QRcode<br>預覽網頁樣式</p>
                             </div>
                             <p class="btn">
@@ -201,12 +207,12 @@ $(document).ready(function() {
                 <div class="template-box">
                     <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
                     <div class="template-cover">
-                        <img src="images/example_cover_04.jpg" alt="">
+                        <img src="images/cover/cover_04.jpg" alt="">
                     </div>
                     <div class="tools">
                         <div class="both-box clearfix">
                             <div class="qrcode">
-                                <img src="images/qrcode/example_qrcode_04.png">
+                                <img src="images/qrcode/qrcode_04.png">
                                 <p>手機掃描QRcode<br>預覽網頁樣式</p>
                             </div>
                             <p class="btn">
@@ -225,12 +231,12 @@ $(document).ready(function() {
                 <div class="template-box">
                     <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
                     <div class="template-cover">
-                        <img src="images/example_cover_05.jpg" alt="">
+                        <img src="images/cover/cover_05.jpg" alt="">
                     </div>
                     <div class="tools">
                         <div class="both-box clearfix">
                             <div class="qrcode">
-                                <img src="images/qrcode/example_qrcode_05.png">
+                                <img src="images/qrcode/qrcode_05.png">
                                 <p>手機掃描QRcode<br>預覽網頁樣式</p>
                             </div>
                             <p class="btn">
@@ -241,7 +247,7 @@ $(document).ready(function() {
                     </div>
                 </div>
                 <div class="template-info clearfix">
-                    <p class="template-name">簡約色塊風 I</p>
+                    <p class="template-name">簡約漸層色塊風</p>
                     <p class="record">846 瀏覽次數 / 999 使用人氣</p>
                 </div>
             </li>
@@ -249,12 +255,12 @@ $(document).ready(function() {
                 <div class="template-box">
                     <div class="img-browser-top"><i class="fas fa-ellipsis-h"></i></div>
                     <div class="template-cover">
-                        <img src="images/example_cover_06.jpg" alt="">
+                        <img src="images/cover/cover_06.jpg" alt="">
                     </div>
                     <div class="tools">
                         <div class="both-box clearfix">
                             <div class="qrcode">
-                                <img src="images/qrcode/example_qrcode_06.png">
+                                <img src="images/qrcode/qrcode_06.png">
                                 <p>手機掃描QRcode<br>預覽網頁樣式</p>
                             </div>
                             <p class="btn">
@@ -265,7 +271,7 @@ $(document).ready(function() {
                     </div>
                 </div>
                 <div class="template-info clearfix">
-                    <p class="template-name">簡約向量風 II</p>
+                    <p class="template-name">簡約漸層色塊風 I</p>
                     <p class="record">750 瀏覽次數 / 89 使用人氣</p>
                 </div>
             </li>

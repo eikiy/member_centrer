@@ -1,7 +1,16 @@
 /*template*/
-.template-contents h2.top-title{ text-align: center; font-size: 1.5rem; padding:60px 0 30px 0; }
-.template-contents p.sub-title{ text-align: center; font-size: 1rem; padding: 5px 0; color: #333; width: 90%; margin: 0 auto; }
+.template-contents{ width: 100%;  padding-top: 60px; }
+.template-contents h2.top-title{ text-align: center; font-size: 1.5rem; padding:50px 0 25px 0; }
+.template-contents ul.template-tag{ width: 100%; text-align: center; padding-bottom: 20px;}
+.template-contents ul.template-tag li{ display: inline-block; padding: 3px; }
+.template-contents ul.template-tag li p {font-size: 0.813rem;}
+.template-contents ul.template-tag li a{ border-radius: 40px; min-width: 90px; background-color: #aba2a2; color: #fff; padding:6px 8px; display: inline-block; }
+.template-contents ul.template-tag li a:hover{ background-color: #777; }
+.template-contents ul.template-tag li a.selected{ background-color: #333; }
+
+.template-contents p.sub-title{ text-align: center; font-size: 1rem; padding: 5px 0 10px; color: #333; width: 90%; margin: 0 auto; }
 .template-contents p.sub-title span{ border:1.5px solid #333; padding: 3px 15px; border-radius: 40px; display: inline-block; font-size: 0.750rem; margin: 2.5px 5px; }
+
 .template-contents ul.template-list{ width: 100%; max-width: 1440px; margin: 0 auto; padding-bottom: 100px;}
 .template-contents ul.template-list li{ float: left; width: 33%; padding: 20px;}
 .template-contents ul.template-list li .img-browser-top{ width: 100%; border-radius: 6px 6px 0 0; display: block; height: 20px; background-color: #ebedef; color: #fff; font-size: 18px; padding:0 15px; }
@@ -21,7 +30,7 @@
 
 .template-contents ul.template-list li .template-box .both-box{ width: 100%; max-width: 310px; position: relative; padding: 0 20px; }
 .template-contents ul.template-list li .template-box .qrcode{ float: left; width: 100%; max-width: 130px; padding: 5px; background-color: #fff; text-align: center; }
-.template-contents ul.template-list li .template-box .qrcode p{ font-size: 12.5px; color: #444; line-height: 20px; font-weight: bold; }
+.template-contents ul.template-list li .template-box .qrcode p{ font-size:0.781rem; color: #444; line-height: 20px; font-weight: bold; }
 .template-contents ul.template-list li .template-box .qrcode img{ width: 100%; max-width: 100px; display: inline-block; }
 
 .template-contents ul.template-list li .template-box .label-type{position: absolute; top: -33px; left: -38px; background-color: #000; color: #fff; width:115px; height: 0; border-width: 0 30px 30px; background: none ;z-index: 2; border-style: solid; border-color: transparent transparent #e74564; -moz-transform-origin:right bottom; -moz-transform:rotate(-45deg);-webkit-transform-origin:right bottom; -webkit-transform:rotate(-45deg); -o-transform-origin:right bottom;-o-transform:rotate(-45deg); -ms-transform-origin:right bottom; -ms-transform:rotate(-45deg); transform-origin:right bottom; transform:rotate(-45deg);}
