@@ -1,0 +1,31 @@
+/*showcase*/
+@import url(animate.css);
+.showcase-contents{ width: 100%;  padding-top: 60px; }
+.showcase-contents .ContentsBox{ margin: 0 auto; }
+.showcase-contents h2.top-title{ text-align: center; font-size: 2rem; padding:50px 0 25px 0; }
+.showcase-contents ul.showcase-list{ width: 100%; max-width: 1440px; margin: 0 auto; padding-bottom: 100px;}
+.showcase-contents ul.showcase-list li{ float: left; width: 33%; padding: 30px 40px;}
+.showcase-contents ul.showcase-list li .img-browser-top{ width: 100%; border-radius: 6px 6px 0 0; display: block; height: 20px; background-color: #ebedef; color: #fff; font-size: 18px; padding:0 15px; }
+.showcase-contents ul.showcase-list li .showcase-cover{ width: 100%; display: block; background-size: cover; background-position: center center; }
+.showcase-contents ul.showcase-list li .showcase-cover img{ width: 100%; }
+.showcase-contents ul.showcase-list li .showcase-cover:hover{ opacity: .8; }
+.showcase-contents ul.showcase-list li p.showcase-name{ font-size: 1rem; color: #444;}
+
+.showcase-contents ul.showcase-list li .showcase-box{width: 100%; position: relative;}
+.showcase-contents ul.showcase-list li .showcase-info{ padding: 15px 0; min-height: 75px; text-align: center;}
+
+/*==== RWD ====*/
+@media (max-width:1460px){
+	.showcase-contents ul.showcase-list{ max-width:calc(100% - 40px);}
+}
+@media (max-width:1200px){
+	.showcase-contents ul.showcase-list li{ width: 50%; }
+}
+@media (max-width:750px){
+	.showcase-contents h2.top-title{ font-size: 1.5rem; }
+	.showcase-contents ul.showcase-list li{ width: 100%; }
+}
+@media (max-width:400px){
+	.showcase-contents ul.showcase-list li{ padding:0;}
+	.showcase-contents ul.showcase-list li p.showcase-name{ font-size: 0.8rem;}
+}
