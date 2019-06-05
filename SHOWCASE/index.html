@@ -53,6 +53,7 @@
         });
     });
 </script>
+
 <style type="text/css">
     .showcase-info{ background-color: #eeeeee; padding-bottom:50px; }
     .showcase-info .showcase-box{ width: 100%; padding: 40px 0; }
@@ -62,16 +63,29 @@
     .showcase-info .showcase-box li a:hover{ opacity: .8; }
     .showcase-info .showcase-box li img{width: 100%;}
 
-    .user_feelback .flexslider{ width: 100%; max-width: 600px; margin: 0 auto;}
+    .user_feelback .flexslider{ width: 100%; max-width:1200px; margin: 0 auto;}
     .user_feelback .flexslider h4{ padding:30px 0 10px 0; font-weight: bold; }
     .user_feelback .flexslider ul{ min-height: 100px; padding-top: 40px; }
     .user_feelback .flexslider ul li{ background-position: center center; background-repeat: no-repeat; background-size: cover;}
-    .user_feelback .flexslider ul li p{ max-width: 330px; line-height: 26px; margin: 0 auto; letter-spacing: 1px; }
+    .user_feelback .flexslider ul li p{ max-width: 400px; line-height: 26px; margin: 0 auto; padding: 0 20px; letter-spacing: 1px; }
     .user_feelback .flexslider .flex-control-nav{ bottom: 20px; }
     .user_feelback .flex-control-paging li a{ background-color: #fff; border-color: #999; }
+    .user_feelback .flex-control-paging li a.flex-active{ background: #929292; }
     .user_feelback .user_illustration { width: 100px; height: 100px; margin: 20px auto; display: block; border-radius: 50%; background-repeat: no-repeat; background-position: center center; background-size: cover;  }
+    @media (max-width:960px){
+        .user_feelback .flexslider{ max-width: 640px; }
+    }
+    @media (max-width:850px){
+        .user_feelback{padding-bottom: 40px;}
+    }
     @media (max-width:750px){
         .showcase-info .showcase-box li{  width: 50%; }
+    }
+    @media (max-width:640px){
+        .user_feelback .flexslider{ max-width: 320px; }
+    }
+    @media (max-width:450px){
+        .ecshop-info .topbanner .imgbox::after{ height: 250px; }
     }
 </style>
 </head>
@@ -172,22 +186,11 @@
     <section class="main-banner">
         <div class="contents-box">
             <div class="info-box">
-            <!-- <svg width="17.01px" height="12.93px">
-                                <path class="st0" d="M6.5,0c0,4.7-0.21,8.93-4.67,11.61C1.61,11.74,0.18,12.56,0,12.49c4.75,1.54,20.48-0.84,16.31-9.48c-0.6-1.25-3.21-2.24-4.3-2.31L6.5,0L6.5,0z"/>
-                            </svg> -->
-                <!-- <h2 class="main-title">
-                    <span>Brand New Official Website - Lead With Speed
-                        <span class="free">Free<br>Forever
-
-                        </span>
-                    </span>
-                </h2> -->
                 <h2 class="main-title">
                     <span>品牌官網極速體驗
                         <span class="free">永久<br>免費</span>
                     </span>
                 </h2>
-                <!-- <p class="sub-title">holkee adhered to the core tenet of "Enhancing User Experience", the website you create will be published by accelerated Mobile Pages (AMP). The advantage of AMP is "speed"! Improve user engagement with fast, compelling experiences.</p> -->
                 <p class="sub-title">精心製作的網站，是否曾因載入圖片、動畫素材，畫面一片空白卡住、跑超慢？<br>holkee 幫助您提升使用者體驗，推出全新【AMP：加速行動網頁】介面，不再流失因等待過久而離開的網友，從進入頁面起，建立良好的第一印象！</p>
                 <p class="btn"><a href="#">開始創建</a></p>
             </div>
@@ -260,11 +263,11 @@
                 <ul class="slides clearfix">
                     <li>
                         <div class="user_illustration" style="background-image: url(images/user_illustration-01.png)"></div>
-                        <p>真的很好用，而且又是免費的，很難得</p>
+                        <p>真的很好用，而且又是免費的，很難得。</p>
                     </li>
                     <li>
                         <div class="user_illustration" style="background-image: url(images/user_illustration-02.png)"></div>
-                        <p>你們真的很棒！<br>謝謝你們提供這麼的空間讓我們使用</p>
+                        <p>你們真的很棒！<br>謝謝你們提供這麼的空間讓我們使用。</p>
                     </li>
                     <li>
                         <div class="user_illustration" style="background-image: url(images/user_illustration-03.png)"></div>
@@ -276,7 +279,7 @@
                     </li>
                     <li>
                         <div class="user_illustration" style="background-image: url(images/user_illustration-05.png)"></div>
-                        <p>感謝貴公司提供免費空間，會繼續支持您們❤️</p>
+                        <p>感謝貴公司提供免費空間，<br>會繼續支持您們❤️</p>
                     </li>
                 </ul>
             </div>
