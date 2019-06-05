@@ -45,12 +45,15 @@
 <!-- FlexSlider -->
 <script defer src="js/jquery.flexslider.js"></script>
 <script type="text/javascript">
-    $(window).load(function(){
-        $('#flexslider-feelback').flexslider({ animation: "slide",
-            start: function(slider){
-                $('body').removeClass('loading');
-            }
-        });
+    $(window).load(function() {
+      $('#flexslider-feelback').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 320,
+        itemMargin: 0,
+        minItems: 1,
+        maxItems: 3
+      });
     });
 </script>
 
